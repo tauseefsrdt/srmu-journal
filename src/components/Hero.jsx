@@ -155,7 +155,7 @@ export default function Hero() {
                   Official Publication Mandate
                 </div> */}
                 <p className="text-xs sm:text-sm text-slate-700 leading-normal">
-                  IJSPAST, published by <strong>Shri Ramswaroop Memorial University</strong>, is a multidisciplinary journal with an aim to publish high-quality, original and innovative research work in Applied Science and Technology.
+                  IJMAR, published by <strong>Shri Ramswaroop Memorial University</strong>, is a multidisciplinary journal with an aim to publish high-quality, original and innovative research work in Applied Science and Technology.
                 </p>
                 {/* <p className="text-xs text-slate-500 leading-normal">
                   Accepts original research, experimental validations, review papers, and short communications across 23+ core disciplines.

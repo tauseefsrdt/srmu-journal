@@ -4,17 +4,17 @@
 // 3. 13. Template.doc
 
 export const journalInfo = {
-  acronym: "IJSPAST",
-  fullName: "International Journal of Scientific Progress in Applied Science and Technology",
-  shortDesc: "International Journal of Scientific Progress in Applied Science and Technology (IJSPAST) is an international, peer-reviewed, open-access journal dedicated to publishing high-quality original research, review articles, in all areas of science, engineering, and emerging technologies.",
-  calloutDesc: "Authors are encouraged to submit manuscripts that present novel contributions, practical applications, innovative methodologies, and interdisciplinary research.",
+  acronym: "IJMAR",
+  fullName: "International Journal of Multidisciplinary Advanced Research",
+  shortDesc: "The International Journal of Multidisciplinary Advanced Research (IJMAR) is an interdisciplinary and multidisciplinary academic journal devoted to the advancement and dissemination of knowledge in the broad domains of Humanities and Social Sciences, Public Health, Law, Management and Commerce, Education and Journalism.",
+  calloutDesc: "The journal provides an international platform for academicians, researchers, scholars, policymakers, practitioners, and emerging researchers to share innovative ideas, theoretical perspectives, empirical findings, and critical analysis.",
   publisher: "Shri Ramswaroop Memorial University",
   eIssn: "E-ISSN: Available Online",
   reviewModel: "Double-Blind Peer Review (At least two independent reviewers)",
   frequency: "Quarterly Issues with Continuous Fast-Track Online Publishing",
   accessModel: "Immediate Open Access (Global Dissemination)",
   stats: [
-    { label: "Research Domains", value: "22+", change: "Broad Spectrum", icon: "Layers" },
+    { label: "Research Domains", value: "28+", change: "Broad Spectrum", icon: "Layers" },
     { label: "Review Model", value: "Double-Blind", change: "2+ Reviewers", icon: "ShieldCheck" },
     { label: "Plagiarism Standard", value: "< 10%", change: "Strict Screening", icon: "CheckCircle2" },
     { label: "Citation Format", value: "IEEE Style", change: "Standardized", icon: "BookOpen" },
@@ -25,29 +25,34 @@ export const journalInfo = {
 
 // 22 Scope Topics faithfully extracted from "Scope of the Journal.docx"
 export const journalScopeTopics = [
-  { id: 1, title: "Artificial Intelligence and Machine Learning", category: "Computing & AI" },
-  { id: 2, title: "Data Science and Big Data Analytics", category: "Computing & AI" },
-  { id: 3, title: "Cybersecurity and Information Security", category: "Computing & AI" },
-  { id: 4, title: "Internet of Things (IoT)", category: "Computing & AI" },
-  { id: 5, title: "Cloud and Edge Computing", category: "Computing & AI" },
-  { id: 6, title: "Wireless and Mobile Communication", category: "Electronics & Comm" },
-  { id: 7, title: "5G/6G Networks", category: "Electronics & Comm" },
-  { id: 8, title: "Computer Science and Engineering", category: "Computing & AI" },
-  { id: 9, title: "Electronics and Communication Engineering", category: "Electronics & Comm" },
-  { id: 10, title: "Electrical Engineering", category: "Core Engineering" },
-  { id: 11, title: "Mechanical Engineering", category: "Core Engineering" },
-  { id: 12, title: "Civil Engineering", category: "Core Engineering" },
-  { id: 13, title: "Chemical Engineering", category: "Core Engineering" },
-  { id: 14, title: "Environmental Engineering", category: "Core Engineering" },
-  { id: 15, title: "Renewable Energy Systems", category: "Energy & Materials" },
-  { id: 16, title: "Robotics and Automation", category: "Automation & Robotics" },
-  { id: 17, title: "Smart Manufacturing", category: "Automation & Robotics" },
-  { id: 18, title: "Materials Science", category: "Energy & Materials" },
-  { id: 19, title: "Biomedical Engineering", category: "Applied Sciences" },
-  { id: 20, title: "Nanotechnology", category: "Energy & Materials" },
-  { id: 21, title: "Applied Physics", category: "Applied Sciences" },
-  { id: 22, title: "Applied Mathematics", category: "Applied Sciences" },
-  { id: 23, title: "Interdisciplinary Science and Engineering", category: "Interdisciplinary" }
+  { id: 1, title: "Political Science and International Relations", category: "Social Sciences" },
+  { id: 2, title: "Public Administration and Public Policy", category: "Social Sciences" },
+  { id: 3, title: "Sociology and Social Anthropology", category: "Social Sciences" },
+  { id: 4, title: "Economics and Development Studies", category: "Social Sciences" },
+  { id: 5, title: "History and Archaeology", category: "Humanities" },
+  { id: 6, title: "Philosophy and Ethics", category: "Humanities" },
+  { id: 7, title: "Psychology and Behavioural Studies", category: "Social Sciences" },
+  { id: 8, title: "Education and Educational Studies", category: "Education" },
+  { id: 9, title: "Geography and Environmental Studies", category: "Social Sciences" },
+  { id: 10, title: "Gender Studies and Feminist Studies", category: "Social Sciences" },
+  { id: 11, title: "Cultural Studies and Media Studies", category: "Humanities" },
+  { id: 12, title: "Language, Linguistics, and Literature", category: "Humanities" },
+  { id: 13, title: "Religion, Society, and Civilization", category: "Humanities" },
+  { id: 14, title: "Law, Justice, and Human Rights", category: "Law" },
+  { id: 15, title: "Peace and Conflict Studies", category: "Social Sciences" },
+  { id: 16, title: "Governance, Democracy, and Citizenship", category: "Social Sciences" },
+  { id: 17, title: "Globalization and International Studies", category: "Social Sciences" },
+  { id: 18, title: "Rural and Urban Studies", category: "Social Sciences" },
+  { id: 19, title: "Population and Development Studies", category: "Social Sciences" },
+  { id: 20, title: "Migration, Diaspora, and Identity Studies", category: "Social Sciences" },
+  { id: 21, title: "Social Work and Community Development", category: "Social Sciences" },
+  { id: 22, title: "Indigenous and Tribal Studies", category: "Social Sciences" },
+  { id: 23, title: "Digital Society, Technology, and Society", category: "Social Sciences" },
+  { id: 24, title: "Sustainable Development and Environmental Governance", category: "Social Sciences" },
+  { id: 25, title: "Health, Society, and Public Policy", category: "Public Health" },
+  { id: 26, title: "Comparative Politics and Area Studies", category: "Social Sciences" },
+  { id: 27, title: "Contemporary Social, Political, and Cultural Issues", category: "Social Sciences" },
+  { id: 28, title: "Management and Commerce", category: "Management" }
 ];
 
 // General Information, Mission, and Vision matching Wireframe and Journal Mandate
@@ -57,42 +62,43 @@ export const generalInfoCards = [
     num: "01",
     title: "Our Mission",
     badge: "Publication Purpose",
-    summary: "Dedicated to publishing high-quality original research and comprehensive review articles across all dimensions of science, engineering, and emerging technologies.",
+    summary: "Dedicated to promoting high-quality, authentic, and rigorous research in diverse disciplines.",
     points: [
-      "Publish original and innovative research.",
-      "Encourage interdisciplinary collaboration.",
-      "Promote ethical research and scientific integrity.",
-      "Bridge academia and industry.",
-      "Support emerging technologies with societal impact."
+      "To promote high-quality, authentic, and rigorous research in diverse disciplines.",
+      "To provide an international platform for critical thinking, intellectual diversity, and innovation.",
+      "To uphold the highest standards of academic integrity, ethical research, and scholarly publishing.",
+      "To encourage research addressing contemporary global and local challenges.",
+      "To endorse and facilitate international collaboration among scholars.",
+      "To contribute to knowledge creation and dissemination for the betterment of society."
     ],
-    details: "IJSPAST fosters an encouraging ecosystem where researchers, engineers, and academicians publish innovative methodologies that bridge fundamental inquiry and transformative technological progress."
+    details: "The journal provides an international platform for scholars, researchers, academicians for critical thinking, intellectual diversity, innovation, and new perspectives in academic research."
   },
   {
     id: "general-info",
     num: "02",
-    title: "General Information & Scope",
+    title: "Scope & Domains",
     badge: "Official Journal Details",
     isPrimary: true,
-    summary: "Published by Shri Ramswaroop Memorial University, IJSPAST covers 23+ applied disciplines spanning Artificial Intelligence, 5G/6G Networks, Materials Science, and Interdisciplinary Engineering.",
+    summary: "The International Journal of Multidisciplinary Advanced Research (IJMAR) is a multidisciplinary and interdisciplinary scholarly journal dedicated to the publication of original, high-quality, and rigorous research.",
     points: [
-      "Full Double-Blind Peer Review workflow evaluated by at least two independent referees.",
-      "Strict Plagiarism Screening with similarity below 10% normally acceptable.",
-      "IEEE Referencing Style with standardized camera-ready templates (.doc/.docx/PDF)."
+      "Covers Humanities and Social Sciences, Public Health, Law, Management and Commerce, Education and Journalism.",
+      "Fosters critical inquiry and meaningful academic dialogue.",
+      "Encourages research that contributes to knowledge creation, evidence-based policymaking, social transformation, and sustainable development."
     ],
-    details: "All correspondence regarding manuscript submission, peer review, and publication is handled systematically through the journal's official submission portal and editorial office."
+    details: "The journal provides an international platform for academicians, researchers, scholars, policymakers, practitioners, and emerging researchers to share innovative ideas, theoretical perspectives, empirical findings, and critical analysis."
   },
   {
     id: "vision",
     num: "03",
     title: "Our Vision",
     badge: "Future Scope",
-    summary: "To become a globally recognized journal that publishes high-impact research contributing to technological advancement and sustainable engineering solutions.",
+    summary: "To become a globally recognized and intellectually vibrant platform for advancing knowledge, critical inquiry, innovation, and interdisciplinary research.",
     points: [
-      "Globally recognized for high-impact research publication.",
-      "Contributing to technological advancement worldwide.",
-      "Advancing sustainable engineering solutions for society."
+      "Globally recognized platform for advancing knowledge and critical inquiry.",
+      "Promoting academics globally including cultural connecting.",
+      "Deepening understanding of contemporary social, political, cultural, economic, and human challenges."
     ],
-    details: "IJSPAST envisions an open scholarly future where every impactful idea finds a rigorous, fair, and prompt medium for peer-reviewed publication."
+    details: "The International Journal of Multidisciplinary Advanced Research (IJMAR) initiated by Shri Ramswaroop Memorial University aspired to become a globally recognized and intellectually vibrant platform for advancing knowledge, critical inquiry, innovation, and interdisciplinary research in the fields of Humanities and Social Sciences, Public Health, Law, Management and Commerce, Education and Journalism."
   }
 ];
 
@@ -138,7 +144,7 @@ export const authorGuidelinesData = {
   ],
   referencingStyle: {
     name: "IEEE Referencing Style",
-    desc: "IJSPAST strictly recommends the IEEE Referencing Style. Authors are responsible for ensuring the accuracy and completeness of all references.",
+    desc: "IJMAR strictly recommends the IEEE Referencing Style. Authors are responsible for ensuring the accuracy and completeness of all references.",
     examples: [
       {
         type: "Journal Article",
@@ -189,7 +195,7 @@ export const authorGuidelinesData = {
     {
       title: "Peer Review Workflow",
       points: [
-        "IJSPAST follows a rigorous Double-Blind Peer Review process.",
+        "IJMAR follows a rigorous Double-Blind Peer Review process.",
         "Each manuscript is evaluated by at least two independent reviewers.",
         "Editorial decisions include: Accept, Minor Revision, Major Revision, or Reject.",
         "The Editor-in-Chief makes the final editorial decision."
@@ -198,7 +204,7 @@ export const authorGuidelinesData = {
     {
       title: "Open Access, Copyright & APC",
       points: [
-        "Immediate Open Access: IJSPAST provides immediate open access to promote the global dissemination of scientific knowledge.",
+        "Immediate Open Access: IJMAR provides immediate open access to promote the global dissemination of scientific knowledge.",
         "Copyright: Upon acceptance, authors complete the journal's copyright/licensing agreement.",
         "Publication Charges: Applicable Article Processing Charges (APCs) will be applicable as per journal policy."
       ]

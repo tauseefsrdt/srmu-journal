@@ -109,7 +109,7 @@ export default function Papers() {
               <FileText className="w-6 h-6" />
             </div>
             <div>
-              <h4 className="text-sm sm:text-base font-bold text-slate-900">Publishing in IJSPAST</h4>
+              <h4 className="text-sm sm:text-base font-bold text-slate-900">Publishing in IJMAR</h4>
               <p className="text-xs text-slate-500">Download the camera-ready template (`13. Template.doc`) with Times New Roman & Helvetica formatting rules.</p>
             </div>
           </div>

@@ -16,8 +16,20 @@ import PageHero from '../components/PageHero';
 import pankajImg from '../assets/pankaj-DsE5rnwQ.webp';
 import poojaImg from '../assets/pooja-B1uI8fBS.webp';
 import vijayTiwariImg from '../assets/vijaytiwari-DtLhXa4L.webp';
-import nabeelAhmadImg from '../assets/Nabeel-Ahmad.jpeg';
-import alkeshAgrawalImg from '../assets/Alkesh_Agrawal.webp';
+
+// New Faculty Images
+import ramPratapImg from '../assets/new_faculty/Ram Pratap Yadav.jpg';
+import anilKumarImg from '../assets/new_faculty/Anil Kumar.png';
+import shwetaShuklaImg from '../assets/new_faculty/Shweta.jpg';
+import shilpaShuklaImg from '../assets/new_faculty/Shilpa.png';
+import prakashChandraImg from '../assets/new_faculty/Prakash.png';
+import shashankShekharImg from '../assets/new_faculty/Shashank.png';
+import vibhavSharmaImg from '../assets/new_faculty/Vaibhav.jpg';
+import syedAsifImg from '../assets/new_faculty/Syed.jpg';
+import bmDixitImg from '../assets/new_faculty/BMDixit.png';
+import narendraBahadurImg from '../assets/new_faculty/Narendra.png';
+import veenaSinghImg from '../assets/new_faculty/Veena.png';
+import madhuDixitImg from '../assets/new_faculty/Madhu.png';
 
 // Avatar component with fallback skeleton placeholder
 function MemberAvatar({ image, name, size = "md" }) {
@@ -78,7 +90,7 @@ export default function EditorialBorad() {
 
   const editorInChief = {
     name: "Prof. (Dr.) Vijay Tiwari",
-    designation: "Vice Chancellor",
+    designation: "Editor-in-Chief / Hon'ble Vice Chancellor",
     affiliation: "SRMU, Barabanki-India",
     email: "vc@srmu.ac.in",
     image: vijayTiwariImg
@@ -86,54 +98,29 @@ export default function EditorialBorad() {
 
   const deputyEditorsInChief = [
     {
-      name: "Prof. (Dr.) Nabeel Ahmad",
-      designation: "Director (Research)",
+      name: "Dr. Ram Pratap Yadav",
+      designation: "Deputy Editor-in-Chief",
       affiliation: "SRMU, Barabanki-India",
-      email: "director.research@srmu.ac.in",
-      image: nabeelAhmadImg
-    },
-    {
-      name: "Prof. (Dr.) Alkesh Agrawal",
-      designation: "Deputy Director (Research)",
-      affiliation: "SRMU, Barabanki-India",
-      email: "dd.research@srmu.ac.in",
-      image: alkeshAgrawalImg
+      image: ramPratapImg
     }
   ];
 
   const associateEditors = [
-    { name: "Dr. Jay Kumar Pandey", affiliation: "DEEE", email: "jay.pandey@srmu.ac.in" },
-    { name: "Dr. Md. Saaquib Bin Reyaz", affiliation: "FoME", email: "saquibbinreyaz.research@srmu.ac.in" },
-    { name: "Dr. Mriyunjay Rai", affiliation: "DEEE", email: "mritunjayrai.foeee@srmu.ac.in" },
-    { name: "Dr. Md. Zain", affiliation: "FoCE", email: "mohdzain.ce@srmu.ac.in" },
-    { name: "Dr. Devendra Singh", affiliation: "IBST", email: "devendrasingh.ibst@srmu.ac.in" },
-    { name: "Dr. Garima Gupta", affiliation: "IBST", email: "garimagupta.ibst@srmu.ac.in" },
-    { name: "Dr. Rajeev Kumar", affiliation: "DCSIS", email: "rajeevkr.csis@srmu.ac.in" },
-    { name: "Dr. Sunil K Singh", affiliation: "DEEE", email: "sunilkrsingh.foeee@srmu.ac.in" },
-    { name: "Prof. (Dr.) Dilip Jaiswal", affiliation: "FoMSS", email: "dilipkr.maths@srmu.ac.in" },
-    { name: "Dr. Md. Nadeem", affiliation: "DCSE", email: "mdnadeem.cse@srmu.ac.in" },
-    { name: "Dr. Nitish Singh", affiliation: "FoPS", email: "nitish.phy@srmu.ac.in" },
-    { name: "Dr. Rahul K Vishwakarma", affiliation: "FoCS", email: "rahulk.vishwakarma@srmu.ac.in" }
+    { name: "Dr. Anil Kumar", designation: "Associate Editor", affiliation: "SRMU, Barabanki-India", image: anilKumarImg },
+    { name: "Dr. Shweta Shukla", designation: "Associate Editor", affiliation: "SRMU, Barabanki-India", image: shwetaShuklaImg },
+    { name: "Dr. Shilpa Shukla", designation: "Associate Editor", affiliation: "SRMU, Barabanki-India", image: shilpaShuklaImg },
+    { name: "Dr. Prakash Chandra Mishra", designation: "Associate Editor", affiliation: "SRMU, Barabanki-India", image: prakashChandraImg },
+    { name: "Dr. Shashank Shekhar Singh", designation: "Associate Editor", affiliation: "SRMU, Barabanki-India", image: shashankShekharImg },
+    { name: "Dr. Vibhav Sharma", designation: "Associate Editor", affiliation: "SRMU, Barabanki-India", image: vibhavSharmaImg },
+    { name: "Dr. Syed Asif Mehdi", designation: "Associate Editor", affiliation: "SRMU, Barabanki-India", image: syedAsifImg },
+    { name: "Dr. Seema Tripathi", designation: "Associate Editor", affiliation: "SRMU, Barabanki-India", image: null }
   ];
 
-  const advisoryCommitteeNational = [
-    { name: "Prof. (Dr.) B. M. Dixit", designation: "Dir. (INSH)", affiliation: "SRMU", email: "director.insh@srmu.ac.in" },
-    { name: "Prof. (Dr.) Apurva Anand", designation: "Dir. (IoT)", affiliation: "SRMU", email: "director.engg@srmu.ac.in" },
-    { name: "Prof. (Dr.) Tabish Kidwai", designation: "Dir. (IBST)", affiliation: "SRMU", email: "director.ibst@srmu.ac.in" },
-    { name: "Prof. (Dr.) R.S. Bajpai", designation: "HoD. (DEEE)", affiliation: "SRMU", email: "dean.ee@srmu.ac.in" },
-    { name: "Prof. (Dr.) Abhishek Saxena", designation: "Dean (FoCE)", affiliation: "SRMU", email: "dean.ce@srmu.ac.in" },
-    { name: "Prof. (Dr.) Rajesh Porval", designation: "Dean (FoME)", affiliation: "SRMU", email: "dean.me@srmu.ac.in" },
-    { name: "Prof. (Dr.) V. N. Pathak", designation: "Dean (FoMSS)", affiliation: "SRMU", email: "dean.maths@srmu.ac.in" },
-    { name: "Prof. (Dr.) R. G. Singh", designation: "Dean (FoPS)", affiliation: "SRMU", email: "dean.phy@srmu.ac.in" },
-    { name: "Dr. Shobhit Sinha", designation: "HoD (DCSIS)", affiliation: "SRMU", email: "hod.cse@srmu.ac.in" },
-    { name: "Dr. Sadhana Singh", designation: "HoD (FoCS)", affiliation: "SRMU", email: "dean.cy@srmu.ac.in" },
-    { name: "Dr. Kavita Sahu", designation: "Asstt. Prof. (DoCSE)", affiliation: "Dr. Harsingh Gour Vishwavidyalaya, Sagar, M.P." }
-  ];
-
-  const advisoryCommitteeInternational = [
-    { name: "Dr. Saifullah Khalid", designation: "Principal Scientist", affiliation: "IBMM Research, Khartoum, Sudan", email: "skhalid@ibmmacl.org" },
-    { name: "Dr. Rashad Abaszade", designation: "Turan International Research Institute", affiliation: "Azerbaijan" },
-    { name: "Dr. Shri Krishna Pandey", designation: "Head, Quality Assurance", affiliation: "Symbiosis International University, Dubai, UAE", email: "skpandey@siu-dubai.ac.ae" }
+  const advisoryCommittee = [
+    { name: "Prof. B.M. Dixit", designation: "Advisory Committee", affiliation: "SRMU, Barabanki-India", image: bmDixitImg },
+    { name: "Prof. Narendra Bahadur Singh", designation: "Advisory Committee", affiliation: "SRMU, Barabanki-India", image: narendraBahadurImg },
+    { name: "Prof. Veena Singh", designation: "Advisory Committee", affiliation: "SRMU, Barabanki-India", image: veenaSinghImg },
+    { name: "Prof. Madhu Dixit", designation: "Advisory Committee", affiliation: "SRMU, Barabanki-India", image: madhuDixitImg }
   ];
 
   return (
@@ -150,6 +137,16 @@ export default function EditorialBorad() {
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 space-y-16 text-left">
+        
+        {/* ================= OVERARCHING HEADING ================= */}
+        <div className="flex flex-col items-center justify-center space-y-3 text-center pb-8 border-b-2 border-[#0f4a85]/20 max-w-5xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0f4a85] tracking-tight leading-snug">
+            International Journal of Multidisciplinary Advanced Research (IJMAR)
+          </h2>
+          <p className="text-slate-600 font-bold text-lg sm:text-xl max-w-4xl">
+            (A Multidisciplinary Journal of Humanities, Law, Management and Commerce)
+          </p>
+        </div>
 
         {/* ================= SECTION: PATRONS ================= */}
         <section className="space-y-6">
@@ -158,7 +155,7 @@ export default function EditorialBorad() {
             <div className="flex items-center space-x-2">
               <Crown className="w-5 h-5 text-amber-500" />
               <h2 className="text-xl sm:text-2xl font-extrabold text-[#0f4a85] tracking-tight">
-                Patrons:
+                Patrons
               </h2>
             </div>
             <div className="h-px bg-slate-300 flex-1"></div>
@@ -238,7 +235,7 @@ export default function EditorialBorad() {
             <div className="flex items-center space-x-2">
               <ShieldCheck className="w-5 h-5 text-amber-500" />
               <h2 className="text-xl sm:text-2xl font-extrabold text-[#0f4a85] tracking-tight">
-                Deputy Editors-in-Chief
+                Deputy Editor-in-Chief
               </h2>
             </div>
             <div className="h-px bg-slate-300 flex-1"></div>
@@ -262,15 +259,6 @@ export default function EditorialBorad() {
                   <div className="flex items-center justify-center sm:justify-start text-xs text-slate-500 font-medium">
                     <Building2 className="w-3.5 h-3.5 mr-1.5 text-slate-400 shrink-0" />
                     <span>{deputy.affiliation}</span>
-                  </div>
-                  <div className="pt-2">
-                    <a
-                      href={`mailto:${deputy.email}`}
-                      className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-blue-50/80 hover:bg-blue-100 text-[#0f4a85] text-xs font-semibold border border-blue-200/80 transition-colors"
-                    >
-                      <Mail className="w-3 h-3 text-amber-600" />
-                      <span>{deputy.email}</span>
-                    </a>
                   </div>
                 </div>
               </div>
@@ -307,36 +295,27 @@ export default function EditorialBorad() {
                       {member.affiliation}
                     </div>
                   )}
-                  {member.email && (
-                    <a
-                      href={`mailto:${member.email}`}
-                      className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-blue-50 hover:bg-blue-100 text-[#0f4a85] text-[10px] font-medium border border-blue-100 transition-colors break-all"
-                    >
-                      <Mail className="w-2.5 h-2.5 text-amber-500 shrink-0" />
-                      <span>{member.email}</span>
-                    </a>
-                  )}
                 </div>
               </div>
             ))}
           </div>
         </section>
 
-        {/* ================= SECTION: ADVISORY COMMITTEE (NATIONAL) ================= */}
+        {/* ================= SECTION: ADVISORY COMMITTEE ================= */}
         <section className="space-y-6">
           <div className="flex items-center space-x-4">
             <div className="h-px bg-slate-300 flex-1 max-w-[100px]"></div>
             <div className="flex items-center space-x-2">
               <GraduationCap className="w-5 h-5 text-amber-500" />
               <h2 className="text-xl sm:text-2xl font-extrabold text-[#0f4a85] tracking-tight">
-                Advisory Committee (National)
+                Advisory Committee
               </h2>
             </div>
             <div className="h-px bg-slate-300 flex-1"></div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            {advisoryCommitteeNational.map((member, idx) => (
+            {advisoryCommittee.map((member, idx) => (
               <div
                 key={idx}
                 className="academic-card rounded-2xl p-5 bg-white flex flex-col items-center text-center space-y-3 group hover:border-amber-400/60"
@@ -346,73 +325,10 @@ export default function EditorialBorad() {
                   <h3 className="text-sm font-bold text-slate-800 group-hover:text-[#0f4a85] transition-colors leading-snug">
                     {member.name}
                   </h3>
-                  {member.designation && (
-                    <div className="text-[11px] font-semibold text-slate-700">
-                      {member.designation}
-                    </div>
-                  )}
                   {member.affiliation && (
                     <div className="text-[10px] text-slate-500 leading-tight">
                       {member.affiliation}
                     </div>
-                  )}
-                  {member.email && (
-                    <a
-                      href={`mailto:${member.email}`}
-                      className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-blue-50 hover:bg-blue-100 text-[#0f4a85] text-[10px] font-medium border border-blue-100 transition-colors break-all"
-                    >
-                      <Mail className="w-2.5 h-2.5 text-slate-500 shrink-0" />
-                      <span>{member.email}</span>
-                    </a>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* ================= SECTION: ADVISORY COMMITTEE (INTERNATIONAL) ================= */}
-        <section className="space-y-6">
-          <div className="flex items-center space-x-4">
-            <div className="h-px bg-slate-300 flex-1 max-w-[100px]"></div>
-            <div className="flex items-center space-x-2">
-              <Globe className="w-5 h-5 text-amber-500" />
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#0f4a85] tracking-tight">
-                Advisory Committee (International)
-              </h2>
-            </div>
-            <div className="h-px bg-slate-300 flex-1"></div>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-            {advisoryCommitteeInternational.map((member, idx) => (
-              <div
-                key={idx}
-                className="academic-card rounded-2xl p-5 bg-white flex flex-col items-center text-center space-y-3 group hover:border-blue-400/60"
-              >
-                <MemberAvatar image={member.image} name={member.name} size="md" />
-                <div className="min-w-0 w-full space-y-1.5">
-                  <h3 className="text-sm font-bold text-slate-800 group-hover:text-[#0f4a85] transition-colors leading-snug">
-                    {member.name}
-                  </h3>
-                  {member.designation && (
-                    <div className="text-[11px] font-semibold text-slate-700">
-                      {member.designation}
-                    </div>
-                  )}
-                  {member.affiliation && (
-                    <div className="text-[10px] text-slate-500 leading-tight">
-                      {member.affiliation}
-                    </div>
-                  )}
-                  {member.email && (
-                    <a
-                      href={`mailto:${member.email}`}
-                      className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-blue-50 hover:bg-blue-100 text-[#0f4a85] text-[10px] font-medium border border-blue-100 transition-colors break-all"
-                    >
-                      <Mail className="w-2.5 h-2.5 text-slate-500 shrink-0" />
-                      <span>{member.email}</span>
-                    </a>
                   )}
                 </div>
               </div>

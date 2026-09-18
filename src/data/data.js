@@ -1,13 +1,13 @@
 export const journalInfo = {
-  acronym: "IJSPAST",
-  fullName: "International Journal of Scientific Progress in Applied Science & Technology",
+  acronym: "IJMAR",
+  fullName: "International Journal of Multidisciplinary Advanced Research",
   issn: "E-ISSN: 2582-8800 | Print ISSN: 2582-8797",
   eIssn: "2582-8800",
   publisher: "Shri Ramswaroop Memorial University (SRMU)",
   universityLocation: "Lucknow-Deva Road, Barabanki, Uttar Pradesh, India",
   indexing: ["Scopus Indexed Companion", "Google Scholar", "CrossRef (DOI)", "DOAJ Approved", "UGC-CARE Listed Guidelines"],
   tagline: "Advancing Global Scientific Discovery, Technological Innovation & Multidisciplinary Research",
-  shortDesc: "IJSPAST, published by Shri Ramswaroop Memorial University, is a premier peer-reviewed multidisciplinary journal committed to disseminating groundbreaking, original, and innovative research in Applied Sciences, Engineering, and Cutting-Edge Technologies.",
+  shortDesc: "The International Journal of Multidisciplinary Advanced Research (IJMAR) is an interdisciplinary and multidisciplinary academic journal devoted to the advancement and dissemination of knowledge in the broad domains of Humanities and Social Sciences, Public Health, Law, Management and Commerce, Education and Journalism.",
   stats: [
     { label: "Research Publications", value: "195+", icon: "FileText" },
     { label: "Patents Published", value: "47", icon: "Lightbulb" },
@@ -59,26 +59,27 @@ export const generalInfoData = [
     icon: "Target",
     accentColor: "from-amber-500 to-amber-600",
     badge: "Core Purpose",
-    summary: "To cultivate a world-class academic publishing ecosystem that discovers, evaluates, and rapidly disseminates original, impactful, and peer-reviewed research across applied sciences and engineering disciplines.",
+    summary: "Dedicated to promoting high-quality, authentic, and rigorous research in diverse disciplines.",
     points: [
-      "Champion rigorous double-blind peer-review workflows upholding global COPE benchmarks.",
-      "Empower emerging and veteran researchers with open-access dissemination.",
-      "Foster interdisciplinary solutions addressing grand societal and industrial challenges."
+      "To promote high-quality, authentic, and rigorous research in diverse disciplines.",
+      "To provide an international platform for critical thinking, intellectual diversity, and innovation.",
+      "To uphold the highest standards of academic integrity, ethical research, and scholarly publishing.",
+      "To encourage research addressing contemporary global and local challenges."
     ]
   },
   {
     id: "general-info",
-    title: "General Information",
+    title: "Scope & Domains",
     tagline: "Multidisciplinary Open-Access Forum",
     icon: "Layers",
     accentColor: "from-blue-600 to-brand-900",
     badge: "Overview & Indexing",
     isPrimary: true,
-    summary: "IJSPAST is the official flagship research journal published under the auspices of Shri Ramswaroop Memorial University. It operates quarterly with continuous online publishing, ensuring immediate global indexing and DOI attribution.",
+    summary: "The International Journal of Multidisciplinary Advanced Research (IJMAR) is a multidisciplinary and interdisciplinary scholarly journal dedicated to the publication of original, high-quality, and rigorous research.",
     points: [
-      "Publication Frequency: Quarterly (4 Issues / Year) with Continuous Online Fast-Track.",
-      "Access Model: Fully Diamond Open Access (Freely accessible globally to researchers).",
-      "Indexing & DOI: Every published manuscript receives a CrossRef DOI and semantic indexing."
+      "Covers Humanities and Social Sciences, Public Health, Law, Management and Commerce, Education and Journalism.",
+      "Fosters critical inquiry and meaningful academic dialogue.",
+      "Encourages research that contributes to knowledge creation, evidence-based policymaking, social transformation, and sustainable development."
     ]
   },
   {
@@ -88,11 +89,11 @@ export const generalInfoData = [
     icon: "Compass",
     accentColor: "from-sky-500 to-blue-700",
     badge: "Strategic Horizon",
-    summary: "To emerge as a premier international repository of breakthrough scientific knowledge, serving as a trusted bridge between laboratory research, patent innovation, and real-world industrial implementation.",
+    summary: "To become a globally recognized and intellectually vibrant platform for advancing knowledge, critical inquiry, innovation, and interdisciplinary research.",
     points: [
-      "Establish international benchmark citations in emerging deep tech and applied fields.",
-      "Bridge the academia-to-patent pipeline through university-industry collaborative research.",
-      "Promote inclusive global research representation across developing and developed nations."
+      "Globally recognized platform for advancing knowledge and critical inquiry.",
+      "Promoting academics globally including cultural connecting.",
+      "Deepening understanding of contemporary social, political, cultural, economic, and human challenges."
     ]
   }
 ];
@@ -103,7 +104,7 @@ export const featuredArticles = [
     title: "Deep Neural Adaptive Frameworks for Autonomous Edge Robotics in Smart Manufacturing",
     category: "AI & Robotics",
     categoryColor: "bg-amber-100 text-amber-900 border-amber-300",
-    doi: "10.5281/ijspast.2026.0941",
+    doi: "10.5281/ijmar.2026.0941",
     date: "September 2026",
     authors: [
       { name: "Dr. Aarav Sharma", affiliation: "Dept. of Computer Science & AI, SRMU" },
@@ -124,7 +125,7 @@ export const featuredArticles = [
     title: "Biocompatible Nanostructured Hydrogels for Targeted Drug Delivery in Precision Oncology",
     category: "Bioscience & Biotech",
     categoryColor: "bg-blue-100 text-blue-900 border-blue-300",
-    doi: "10.5281/ijspast.2026.0822",
+    doi: "10.5281/ijmar.2026.0822",
     date: "August 2026",
     authors: [
       { name: "Dr. Elena Rostova", affiliation: "Institute of Bioscience & Nanotech, SRMU" },
@@ -145,7 +146,7 @@ export const featuredArticles = [
     title: "Scalable Perovskite-Silicon Tandem Photovoltaics: Passivation Strategies Beyond 32% Efficiency",
     category: "Materials & Energy",
     categoryColor: "bg-emerald-100 text-emerald-900 border-emerald-300",
-    doi: "10.5281/ijspast.2026.0718",
+    doi: "10.5281/ijmar.2026.0718",
     date: "July 2026",
     authors: [
       { name: "Dr. Kenji Takahashi", affiliation: "Photovoltaic Research Center, Tokyo Tech" },
@@ -166,7 +167,7 @@ export const featuredArticles = [
     title: "Entanglement-Based Continuous-Variable Quantum Key Distribution Over Turbulent Free-Space Channels",
     category: "Quantum & Photonics",
     categoryColor: "bg-purple-100 text-purple-900 border-purple-300",
-    doi: "10.5281/ijspast.2026.0605",
+    doi: "10.5281/ijmar.2026.0605",
     date: "June 2026",
     authors: [
       { name: "Prof. Vikramaditya Sen", affiliation: "Quantum Information Lab, SRMU" },
