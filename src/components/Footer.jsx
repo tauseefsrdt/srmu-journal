@@ -20,9 +20,9 @@ export default function Footer() {
       links: [
         { name: "Vision & Scope", href: "/vision-scope" },
         { name: "Publication Details", href: "/publication-details" },
+        { name: "Editorial Board", href: "/editorial-board" },
         { name: "Patrons & Advisory", href: "/patrons-advisory" },
-        { name: "Peer Review Policy", href: "/peer-review-policy" },
-        { name: "Contact Editorial Office", href: "/contact" }
+        { name: "Submit Paper Online", href: "/submit" }
       ]
     },
     {
@@ -41,17 +41,18 @@ export default function Footer() {
         { name: "Current Issue (Vol. 01, 2026)", href: "/papers" },
         { name: "Special Tracks & Resonators", href: "/papers" },
         { name: "Online Archives", href: "/papers" },
-        { name: "Submit Paper Online", href: "/submit" }
+        { name: "Submit Manuscript", href: "/submit" }
       ]
     },
     {
       title: "Ethics & Policies",
       links: [
-        { name: "Publication Ethics (COPE)", href: "/ethics-policy" },
-        { name: "Plagiarism Policy", href: "/ethics-policy" },
-        { name: "AI Tool Use & Disclosure", href: "/ethics-policy" },
-        { name: "Open Access (CC BY 4.0)", href: "/publication-details" },
-        { name: "Copyright & Licensing", href: "/ethics-policy" }
+        { name: "Publication Ethics Policy", href: "/ethics-policy" },
+        { name: "Plagiarism Policy", href: "/plagiarism-policy" },
+        { name: "Peer Review Policy", href: "/peer-review-policy" },
+        { name: "Editorial Policy", href: "/editorial-policy" },
+        { name: "Conflict of Interest Policy", href: "/conflict-of-interest-policy" },
+        { name: "Open Access Policy (CC BY 4.0)", href: "/open-access-policy" }
       ]
     }
   ];

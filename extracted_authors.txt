@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 w:rsidR="000C4120" w:rsidRDefault="000C4120" w:rsidP="000C4120"> Note: This information to be posted under Authors Guidelines
 w:rsidR="000C4120" w:rsidRPr="009D3FCC" w:rsidRDefault="000C4120" w:rsidP="000C4120"> International Journal of Multidisciplinary Advanced Research (IJMAR) is an international, peer-reviewed, open-access journal dedicated to publishing high-quality original research, review articles, in all areas of science, engineering, and emerging technologies.
 w:rsidR="000C4120" w:rsidRPr="009D3FCC" w:rsidRDefault="000C4120" w:rsidP="000C4120"> Authors are encouraged to submit manuscripts that present novel contributions, practical applications, innovative methodologies, and interdisciplinary research.
@@ -126,3 +127,6 @@ w:rsidR="000C4120" w:rsidRPr="009D3FCC" w:rsidRDefault="009B4E9F" w:rsidP="000C4
 w:rsidR="000C4120" w:rsidRPr="000C4120" w:rsidRDefault="000C4120" w:rsidP="000C4120"> Correspondence
 w:rsidR="000C4120" w:rsidRPr="009D3FCC" w:rsidRDefault="009B4E9F" w:rsidP="000C4120"> All correspondence regarding manuscript submission, peer review, and publication should be addressed to the Editorial Office of the International Journal of Multidisciplinary Advanced Research (IJMAR) through the journal's official submission system or designated editorial email.
 w:rsidR="00F85453" w:rsidRDefault="00F85453"/>
+=======
+﻿
+>>>>>>> 16d9915de9d5acb5730265ed2378e00d46e171eb

@@ -27,18 +27,30 @@ export default function Header({ onOpenSearch }) {
       dropdown: [
         { title: "Vision & Scope", href: "/vision-scope", desc: "Interdisciplinary scientific domains" },
         { title: "Publication Details", href: "/publication-details", desc: "Full page journal specs, frequency & peer review" },
-        { title: "Editorial Borad", href: "/editorial-borad", desc: "Direct communication with editorial desk" }
+        { title: "Editorial Board", href: "/editorial-board", desc: "Direct communication with editorial desk" },
+        { title: "Patrons & Advisory", href: "/patrons-advisory", desc: "Advisory leadership & patrons" }
       ]
     },
     {
       name: "Guidelines",
       href: "/guidelines",
       dropdown: [
-        { title: "Authors Guidelines", href: "/guidelines", desc: "Preparation rules & requirements" },
-        { title: "Peer Review Policy", href: "/peer-review-policy", desc: "Double-blind evaluation process & standards" },
-        { title: "Plagiarism Policy", href: "/ethics-policy", desc: "Similarity thresholds & publication ethics" }
+        { title: "Authors Guidelines", href: "/guidelines", desc: "Preparation rules, manuscript structure & requirements" }
       ]
     },
+    {
+      name: "Policies",
+      href: "/ethics-policy",
+      dropdown: [
+        { title: "Publication Ethics Policy", href: "/ethics-policy", desc: "COPE & ICMJE compliance standards" },
+        { title: "Plagiarism Policy", href: "/plagiarism-policy", desc: "Similarity index benchmarks & sanctions" },
+        { title: "Peer Review Policy", href: "/peer-review-policy", desc: "Double-blind evaluation process" },
+        { title: "Editorial Policy", href: "/editorial-policy", desc: "Governance, scope & decision workflow" },
+        { title: "Conflict of Interest Policy", href: "/conflict-of-interest-policy", desc: "Disclosure requirements & management" },
+        { title: "Open Access Policy", href: "/open-access-policy", desc: "CC BY 4.0 licensing & global access" }
+      ]
+    },
+
     {
       name: "Template",
       href: "/template"
@@ -146,7 +158,7 @@ export default function Header({ onOpenSearch }) {
                               <span className="text-xs font-bold text-slate-800 group-hover/item:text-[#0f4a85]">
                                 {sub.title}
                               </span>
-                              <ArrowRight className="w-3 h-3 opacity-0 -translate-x-1 group-hover/item:opacity-100 group-hover/item:translate-x-0 transition-all text-amber-500" />
+                              <ArrowRight className="w-3 h-3 opacity-0 -translate-x-1 group-hover/item:opacity-100 group-hover/item:translate-x-0 transition-all text-amber-500 shrink-0 ml-1" />
                             </div>
 
                           </Link>

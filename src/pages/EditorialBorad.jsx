@@ -73,7 +73,7 @@ function MemberAvatar({ image, name, size = "md" }) {
   );
 }
 
-export default function EditorialBorad() {
+export default function EditorialBoard() {
   // Exact data from Editorial Board.docx
   const patrons = [
     {
@@ -187,7 +187,7 @@ export default function EditorialBorad() {
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 space-y-16 text-left">
-        
+
         {/* ================= OVERARCHING HEADING ================= */}
         <div className="flex flex-col items-center justify-center space-y-3 text-center pb-8 border-b-2 border-[#0f4a85]/20 max-w-5xl mx-auto">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0f4a85] tracking-tight leading-snug">

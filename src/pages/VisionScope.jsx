@@ -153,8 +153,8 @@ export default function VisionScope() {
         {/* CTA Strip */}
         <div className="academic-card rounded-2xl p-6 sm:p-8 bg-gradient-to-r from-[#0f4a85] to-[#0f4a85] text-white flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="space-y-1 text-center sm:text-left">
-            <h4 className="text-base sm:text-lg font-bold text-white">Have a manuscript that fits our scope?</h4>
-            <p className="text-xs text-slate-300">Submit your work today for double-blind peer review and rapid international publication.</p>
+            <h4 className="text-base sm:text-lg font-bold text-[#0f4a85]">Have a manuscript that fits our scope?</h4>
+            <p className="text-xs text-slate-700">Submit your work today for double-blind peer review and rapid international publication.</p>
           </div>
           <Link
             to="/submit"
