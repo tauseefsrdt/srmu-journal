@@ -15,11 +15,16 @@ import Guidelines from './pages/Guidelines';
 import Template from './pages/Template';
 import ReferencingStyle from './pages/ReferencingStyle';
 import EthicsPolicy from './pages/EthicsPolicy';
+import PlagiarismPolicy from './pages/PlagiarismPolicy';
+import ConflictOfInterestPolicy from './pages/ConflictOfInterestPolicy';
+import EditorialPolicy from './pages/EditorialPolicy';
+import OpenAccessPolicy from './pages/OpenAccessPolicy';
 import Papers from './pages/Papers';
 import ArticleDetail from './pages/ArticleDetail';
 import Submit from './pages/Submit';
-import EditorialBorad from './pages/EditorialBorad';
+
 import PeerReviewPolicy from './pages/PeerReviewPolicy';
+import EditorialBoard from './pages/EditorialBorad';
 
 
 // Scroll to top on route change component
@@ -66,12 +71,29 @@ function MainLayout() {
           <Route path="/guidelines" element={<Guidelines />} />
           <Route path="/template" element={<Template />} />
           <Route path="/referencing-style" element={<ReferencingStyle />} />
+
+          {/* 6 Core Policy Routes */}
           <Route path="/ethics-policy" element={<EthicsPolicy />} />
+          <Route path="/publication-ethics" element={<EthicsPolicy />} />
+          <Route path="/publication-ethics-policy" element={<EthicsPolicy />} />
+
+          <Route path="/plagiarism-policy" element={<PlagiarismPolicy />} />
+          <Route path="/plagiarism" element={<PlagiarismPolicy />} />
+
+          <Route path="/editorial-policy" element={<EditorialPolicy />} />
+
+          <Route path="/conflict-of-interest-policy" element={<ConflictOfInterestPolicy />} />
+          <Route path="/conflict-of-interest" element={<ConflictOfInterestPolicy />} />
+
+          <Route path="/open-access-policy" element={<OpenAccessPolicy />} />
+          <Route path="/open-access" element={<OpenAccessPolicy />} />
+
+          <Route path="/peer-review-policy" element={<PeerReviewPolicy />} />
+
           <Route path="/papers" element={<Papers />} />
           <Route path="/articles/:id" element={<ArticleDetail />} />
-          <Route path="/editorial-borad" element={<EditorialBorad />} />
+          <Route path="/editorial-board" element={<EditorialBoard />} />
           <Route path="/submit" element={<Submit />} />
-          <Route path="/peer-review-policy" element={<PeerReviewPolicy />} />
           {/* Catch-all fallback */}
           <Route path="*" element={<Home />} />
         </Routes>

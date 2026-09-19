@@ -1,10 +1,24 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Search, X, ArrowRight, Layers, BookOpen, Sparkles, FileText, CheckCircle2 } from 'lucide-react';
-import { journalScopeTopics, authorGuidelinesData, featuredTemplateArticles } from '../data/journalDocData';
+import { useNavigate } from 'react-router-dom';
+import { Search, X, ArrowRight, Layers, BookOpen, Sparkles, FileText, CheckCircle2, ShieldCheck, Scale, Globe, Eye } from 'lucide-react';
+import { journalScopeTopics, featuredTemplateArticles } from '../data/journalDocData';
+
+const journalPolicies = [
+  { id: 'pol-1', title: 'Publication Ethics Policy', path: '/ethics-policy', category: 'COPE Standards', desc: 'Author responsibilities, integrity, authorship & corrections' },
+  { id: 'pol-2', title: 'Plagiarism Policy', path: '/plagiarism-policy', category: 'Similarity Screening', desc: 'Similarity index thresholds, detection software & sanctions' },
+  { id: 'pol-3', title: 'Peer Review Policy', path: '/peer-review-policy', category: 'Evaluation Process', desc: 'Double-blind review workflow & reviewer guidance' },
+  { id: 'pol-4', title: 'Editorial Policy', path: '/editorial-policy', category: 'Editorial Governance', desc: 'Scope evaluation, decision criteria & timeliness' },
+  { id: 'pol-5', title: 'Conflict of Interest Policy', path: '/conflict-of-interest-policy', category: 'Transparency', desc: 'Disclosure requirements for authors, reviewers & editors' },
+  { id: 'pol-6', title: 'Open Access Policy', path: '/open-access-policy', category: 'Licensing & Access', desc: 'CC BY 4.0 unrestricted access & repository rights' },
+  { id: 'pol-7', title: 'Authors Guidelines', path: '/guidelines', category: 'Author Submission', desc: 'Preparation rules, manuscript structure & checklist' },
+  { id: 'pol-8', title: 'IEEE Referencing Style', path: '/referencing-style', category: 'Citations', desc: 'Formatting rules & examples for journals, books & web' },
+  { id: 'pol-9', title: 'Camera-Ready Template', path: '/template', category: 'Layout', desc: 'Official typography, margins & .DOC template' }
+];
 
 export default function SearchModal({ isOpen, onClose, onSelectArticle, onOpenGuidelines }) {
   const [query, setQuery] = useState('');
   const inputRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (isOpen) {
@@ -13,6 +27,14 @@ export default function SearchModal({ isOpen, onClose, onSelectArticle, onOpenGu
   }, [isOpen]);
 
   if (!isOpen) return null;
+
+  const matchedPolicies = query.trim() === ''
+    ? []
+    : journalPolicies.filter(p =>
+        p.title.toLowerCase().includes(query.toLowerCase()) ||
+        p.category.toLowerCase().includes(query.toLowerCase()) ||
+        p.desc.toLowerCase().includes(query.toLowerCase())
+      );
 
   const matchedScope = query.trim() === ''
     ? []
@@ -82,11 +104,45 @@ export default function SearchModal({ isOpen, onClose, onSelectArticle, onOpenGu
             </div>
           ) : (
             <>
-              {matchedScope.length === 0 && matchedArticles.length === 0 ? (
+              {matchedPolicies.length === 0 && matchedScope.length === 0 && matchedArticles.length === 0 ? (
                 <div className="py-8 text-center text-slate-500 text-xs">
-                  No matching journal topics or articles found for "<strong>{query}</strong>".
+                  No matching journal policies, topics, or articles found for "<strong>{query}</strong>".
                 </div>
               ) : null}
+
+              {/* Matched Policies & Guidelines */}
+              {matchedPolicies.length > 0 && (
+                <div className="space-y-2">
+                  <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 flex items-center space-x-1.5">
+                    <ShieldCheck className="w-3.5 h-3.5 text-amber-500" />
+                    <span>Journal Policies & Guidelines ({matchedPolicies.length})</span>
+                  </div>
+                  <div className="grid grid-cols-1 gap-1.5">
+                    {matchedPolicies.map((pol) => (
+                      <div
+                        key={pol.id}
+                        className="flex items-center justify-between p-2.5 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200 transition-all cursor-pointer group"
+                        onClick={() => {
+                          onClose();
+                          navigate(pol.path);
+                        }}
+                      >
+                        <div className="flex items-start space-x-2.5">
+                          <CheckCircle2 className="w-4 h-4 text-[#0f4a85] mt-0.5 shrink-0" />
+                          <div>
+                            <div className="flex items-center space-x-2">
+                              <p className="text-xs font-bold text-slate-800 group-hover:text-[#0f4a85]">{pol.title}</p>
+                              <span className="text-[9px] font-mono px-1.5 py-0.2 rounded bg-slate-100 text-slate-600 font-semibold">{pol.category}</span>
+                            </div>
+                            <p className="text-[11px] text-slate-500 line-clamp-1">{pol.desc}</p>
+                          </div>
+                        </div>
+                        <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-[#0f4a85] group-hover:translate-x-0.5 transition-all" />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {/* Matched Scope Domains */}
               {matchedScope.length > 0 && (

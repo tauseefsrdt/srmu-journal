@@ -14,9 +14,10 @@ import {
   RefreshCw,
   Star,
   Globe,
-  ArrowUpRight,
+  ArrowUpRight
 } from 'lucide-react';
 import PageHero from '../components/PageHero';
+import { journalInfo } from '../data/journalDocData';
 
 const sections = [
   {
@@ -413,12 +414,14 @@ export default function PeerReviewPolicy() {
 
       <PageHero
         title="Peer Review Policy"
-        subtitle="IJMAR's complete peer review framework — covering the double-blind model, editorial workflow, reviewer responsibilities, ethical standards, and timelines."
+        subtitle="Complete peer review framework — covering the double-blind model, editorial workflow, reviewer responsibilities, evaluation criteria, and review timelines."
         badge="Editorial Standards & Policy"
         breadcrumbs={[
+          { name: 'Policies', path: '/peer-review-policy' },
           { name: 'Peer Review Policy' },
         ]}
       />
+
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 space-y-8 text-left">
 
@@ -588,8 +591,8 @@ export default function PeerReviewPolicy() {
         {/* CTA Strip */}
         <div className="academic-card rounded-2xl p-6 sm:p-8 bg-gradient-to-r from-[#0f4a85] to-[#0f4a85] text-white flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="space-y-1 text-center sm:text-left">
-            <h4 className="text-base sm:text-lg font-bold text-white">Ready to submit your research?</h4>
-            <p className="text-xs text-slate-300">All submissions are processed through our rigorous double-blind peer review for rapid international publication.</p>
+            <h4 className="text-base sm:text-lg font-bold text-[#0f4a85]">Ready to submit your research?</h4>
+            <p className="text-xs text-slate-700">All submissions are processed through our rigorous double-blind peer review for rapid international publication.</p>
           </div>
           <Link
             to="/submit"
