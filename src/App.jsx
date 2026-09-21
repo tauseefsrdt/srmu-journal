@@ -25,6 +25,9 @@ import Submit from './pages/Submit';
 
 import PeerReviewPolicy from './pages/PeerReviewPolicy';
 import EditorialBoard from './pages/EditorialBorad';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import RetractionPolicy from './pages/RetractionPolicy';
+import DataAvailabilityPolicy from './pages/DataAvailabilityPolicy';
 
 
 // Scroll to top on route change component
@@ -72,7 +75,7 @@ function MainLayout() {
           <Route path="/template" element={<Template />} />
           <Route path="/referencing-style" element={<ReferencingStyle />} />
 
-          {/* 6 Core Policy Routes */}
+          {/* Policy Routes */}
           <Route path="/ethics-policy" element={<EthicsPolicy />} />
           <Route path="/publication-ethics" element={<EthicsPolicy />} />
           <Route path="/publication-ethics-policy" element={<EthicsPolicy />} />
@@ -90,12 +93,25 @@ function MainLayout() {
 
           <Route path="/peer-review-policy" element={<PeerReviewPolicy />} />
 
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+
+          <Route path="/retraction-and-correction-policy" element={<RetractionPolicy />} />
+          <Route path="/retraction-policy" element={<RetractionPolicy />} />
+          <Route path="/correction-policy" element={<RetractionPolicy />} />
+          <Route path="/retraction-and-correction" element={<RetractionPolicy />} />
+
+          <Route path="/data-availability-policy" element={<DataAvailabilityPolicy />} />
+          <Route path="/data-availability" element={<DataAvailabilityPolicy />} />
+          <Route path="/data-policy" element={<DataAvailabilityPolicy />} />
+
           <Route path="/papers" element={<Papers />} />
           <Route path="/articles/:id" element={<ArticleDetail />} />
           <Route path="/editorial-board" element={<EditorialBoard />} />
           <Route path="/submit" element={<Submit />} />
           {/* Catch-all fallback */}
           <Route path="*" element={<Home />} />
+          
         </Routes>
       </main>
 

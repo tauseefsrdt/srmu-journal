@@ -47,7 +47,10 @@ export default function Header({ onOpenSearch }) {
         { title: "Peer Review Policy", href: "/peer-review-policy", desc: "Double-blind evaluation process" },
         { title: "Editorial Policy", href: "/editorial-policy", desc: "Governance, scope & decision workflow" },
         { title: "Conflict of Interest Policy", href: "/conflict-of-interest-policy", desc: "Disclosure requirements & management" },
-        { title: "Open Access Policy", href: "/open-access-policy", desc: "CC BY 4.0 licensing & global access" }
+        { title: "Open Access Policy", href: "/open-access-policy", desc: "CC BY 4.0 licensing & global access" },
+        { title: "Data Availability Policy", href: "/data-availability-policy", desc: "Research data sharing & statements" },
+        { title: "Retraction & Correction Policy", href: "/retraction-and-correction-policy", desc: "Errata, Corrigenda & COPE retractions" },
+        { title: "Privacy Policy", href: "/privacy-policy", desc: "Data protection & double-blind privacy" }
       ]
     },
 

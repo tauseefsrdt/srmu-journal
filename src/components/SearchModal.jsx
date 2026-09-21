@@ -10,9 +10,12 @@ const journalPolicies = [
   { id: 'pol-4', title: 'Editorial Policy', path: '/editorial-policy', category: 'Editorial Governance', desc: 'Scope evaluation, decision criteria & timeliness' },
   { id: 'pol-5', title: 'Conflict of Interest Policy', path: '/conflict-of-interest-policy', category: 'Transparency', desc: 'Disclosure requirements for authors, reviewers & editors' },
   { id: 'pol-6', title: 'Open Access Policy', path: '/open-access-policy', category: 'Licensing & Access', desc: 'CC BY 4.0 unrestricted access & repository rights' },
-  { id: 'pol-7', title: 'Authors Guidelines', path: '/guidelines', category: 'Author Submission', desc: 'Preparation rules, manuscript structure & checklist' },
-  { id: 'pol-8', title: 'IEEE Referencing Style', path: '/referencing-style', category: 'Citations', desc: 'Formatting rules & examples for journals, books & web' },
-  { id: 'pol-9', title: 'Camera-Ready Template', path: '/template', category: 'Layout', desc: 'Official typography, margins & .DOC template' }
+  { id: 'pol-7', title: 'Data Availability Policy', path: '/data-availability-policy', category: 'Data & Code', desc: 'Research data sharing, statements, repositories & reproducibility' },
+  { id: 'pol-8', title: 'Retraction & Correction Policy', path: '/retraction-and-correction-policy', category: 'COPE Integrity', desc: 'Errata, Corrigenda, Expressions of Concern & Retractions' },
+  { id: 'pol-9', title: 'Privacy Policy', path: '/privacy-policy', category: 'Data Protection', desc: 'Double-blind confidentiality, user privacy & metadata' },
+  { id: 'pol-10', title: 'Authors Guidelines', path: '/guidelines', category: 'Author Submission', desc: 'Preparation rules, manuscript structure & checklist' },
+  { id: 'pol-11', title: 'IEEE Referencing Style', path: '/referencing-style', category: 'Citations', desc: 'Formatting rules & examples for journals, books & web' },
+  { id: 'pol-12', title: 'Camera-Ready Template', path: '/template', category: 'Layout', desc: 'Official typography, margins & .DOC template' }
 ];
 
 export default function SearchModal({ isOpen, onClose, onSelectArticle, onOpenGuidelines }) {
