@@ -141,11 +141,11 @@ export default function Hero() {
             {/* Main Journal Title */}
             <div className="hero-headline space-y-2">
               <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[40px] font-extrabold text-[#0f4a85] tracking-tight leading-[1.2]">
-                International Journal of Scientific Progress in Applied Science &amp; Technology
+                International Journal of Multidisciplinary Advanced Research
               </h1>
-              <p className="text-sm sm:text-base font-medium text-slate-600 italic mt-2">
+              {/* <p className="text-sm sm:text-base font-medium text-slate-600 italic mt-2">
                 "Advancing Innovation through Interdisciplinary Engineering Research"
-              </p>
+              </p> */}
             </div>
 
             {/* Institutional Mandate Card */}
