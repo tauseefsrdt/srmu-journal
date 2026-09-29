@@ -28,7 +28,7 @@ export default function Header({ onOpenSearch }) {
         { title: "Vision & Scope", href: "/vision-scope", desc: "Interdisciplinary scientific domains" },
         { title: "Publication Details", href: "/publication-details", desc: "Full page journal specs, frequency & peer review" },
         { title: "Editorial Board", href: "/editorial-board", desc: "Direct communication with editorial desk" },
-        { title: "Patrons & Advisory", href: "/patrons-advisory", desc: "Advisory leadership & patrons" }
+        // { title: "Patrons & Advisory", href: "/patrons-advisory", desc: "Advisory leadership & patrons" }
       ]
     },
     {

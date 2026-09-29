@@ -78,13 +78,13 @@ export default function EditorialBoard() {
   const patrons = [
     {
       name: "Er. Pankaj Agarwal",
-      designation: "Chancellor",
+      designation: "Hon'ble Chancellor",
       affiliation: "SRMU, Barabanki-India",
       image: pankajImg
     },
     {
       name: "Er. Pooja Agarwal",
-      designation: "Pro Chancellor",
+      designation: "Hon'ble Pro Chancellor",
       affiliation: "SRMU, Barabanki-India",
       image: poojaImg
     }
@@ -99,18 +99,19 @@ export default function EditorialBoard() {
   };
 
   const deputyEditorsInChief = [
-    {
-      name: "Dr. Ram Pratap Yadav",
-      designation: "Deputy Editor-in-Chief",
-      affiliation: "SRMU, Barabanki-India",
-      image: ramPratapImg
-    },
+
     {
       name: "Prof. (Dr.) Nabeel Ahmad",
       designation: "Director (Research)",
       affiliation: "SRMU, Barabanki-India",
       email: "director.research@srmu.ac.in",
       image: nabeelAhmadImg
+    },
+    {
+      name: "Dr. Ram Pratap Yadav",
+      designation: "Deputy Editor-in-Chief",
+      affiliation: "SRMU, Barabanki-India",
+      image: ramPratapImg
     },
     {
       name: "Prof. (Dr.) Alkesh Agrawal",
@@ -130,18 +131,18 @@ export default function EditorialBoard() {
     { name: "Dr. Vibhav Sharma", designation: "Associate Editor", affiliation: "SRMU, Barabanki-India", image: vibhavSharmaImg },
     { name: "Dr. Syed Asif Mehdi", designation: "Associate Editor", affiliation: "SRMU, Barabanki-India", image: syedAsifImg },
     { name: "Dr. Seema Tripathi", designation: "Associate Editor", affiliation: "SRMU, Barabanki-India", image: null },
-    { name: "Dr. Jay Kumar Pandey", affiliation: "DEEE", email: "jay.pandey@srmu.ac.in" },
-    { name: "Dr. Md. Saaquib Bin Reyaz", affiliation: "FoME", email: "saquibbinreyaz.research@srmu.ac.in" },
-    { name: "Dr. Mriyunjay Rai", affiliation: "DEEE", email: "mritunjayrai.foeee@srmu.ac.in" },
-    { name: "Dr. Md. Zain", affiliation: "FoCE", email: "mohdzain.ce@srmu.ac.in" },
-    { name: "Dr. Devendra Singh", affiliation: "IBST", email: "devendrasingh.ibst@srmu.ac.in" },
-    { name: "Dr. Garima Gupta", affiliation: "IBST", email: "garimagupta.ibst@srmu.ac.in" },
-    { name: "Dr. Rajeev Kumar", affiliation: "DCSIS", email: "rajeevkr.csis@srmu.ac.in" },
-    { name: "Dr. Sunil K Singh", affiliation: "DEEE", email: "sunilkrsingh.foeee@srmu.ac.in" },
-    { name: "Prof. (Dr.) Dilip Jaiswal", affiliation: "FoMSS", email: "dilipkr.maths@srmu.ac.in" },
-    { name: "Dr. Md. Nadeem", affiliation: "DCSE", email: "mdnadeem.cse@srmu.ac.in" },
-    { name: "Dr. Nitish Singh", affiliation: "FoPS", email: "nitish.phy@srmu.ac.in" },
-    { name: "Dr. Rahul K Vishwakarma", affiliation: "FoCS", email: "rahulk.vishwakarma@srmu.ac.in" }
+    // { name: "Dr. Jay Kumar Pandey", affiliation: "DEEE", email: "jay.pandey@srmu.ac.in" },
+    // { name: "Dr. Md. Saaquib Bin Reyaz", affiliation: "FoME", email: "saquibbinreyaz.research@srmu.ac.in" },
+    // { name: "Dr. Mriyunjay Rai", affiliation: "DEEE", email: "mritunjayrai.foeee@srmu.ac.in" },
+    // { name: "Dr. Md. Zain", affiliation: "FoCE", email: "mohdzain.ce@srmu.ac.in" },
+    // { name: "Dr. Devendra Singh", affiliation: "IBST", email: "devendrasingh.ibst@srmu.ac.in" },
+    // { name: "Dr. Garima Gupta", affiliation: "IBST", email: "garimagupta.ibst@srmu.ac.in" },
+    // { name: "Dr. Rajeev Kumar", affiliation: "DCSIS", email: "rajeevkr.csis@srmu.ac.in" },
+    // { name: "Dr. Sunil K Singh", affiliation: "DEEE", email: "sunilkrsingh.foeee@srmu.ac.in" },
+    // { name: "Prof. (Dr.) Dilip Jaiswal", affiliation: "FoMSS", email: "dilipkr.maths@srmu.ac.in" },
+    // { name: "Dr. Md. Nadeem", affiliation: "DCSE", email: "mdnadeem.cse@srmu.ac.in" },
+    // { name: "Dr. Nitish Singh", affiliation: "FoPS", email: "nitish.phy@srmu.ac.in" },
+    // { name: "Dr. Rahul K Vishwakarma", affiliation: "FoCS", email: "rahulk.vishwakarma@srmu.ac.in" }
   ];
 
   const advisoryCommittee = [
@@ -291,13 +292,13 @@ export default function EditorialBoard() {
             <div className="h-px bg-slate-300 flex-1"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto items-stretch">
             {deputyEditorsInChief.map((deputy, idx) => (
               <div
                 key={idx}
-                className="academic-card rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-5 bg-white relative overflow-hidden group"
+                className="academic-card rounded-2xl p-6 sm:p-8 flex flex-col  items-center sm:items-start text-center sm:text-left gap-5 bg-white relative overflow-hidden group"
               >
-                <MemberAvatar image={deputy.image} name={deputy.name} size="lg" />
+                <MemberAvatar image={deputy.image} name={deputy.name} size="sm" />
 
                 <div className="space-y-2 z-10 flex-1">
                   <h3 className="text-base sm:text-lg font-bold text-[#0f4a85] group-hover:text-blue-700 transition-colors">
@@ -346,7 +347,7 @@ export default function EditorialBoard() {
                 key={idx}
                 className="academic-card rounded-2xl p-5 bg-white flex flex-col items-center text-center space-y-3 group hover:border-[#0f4a85]/40"
               >
-                <MemberAvatar image={member.image} name={member.name} size="md" />
+                {/* <MemberAvatar image={member.image} name={member.name} size="md" /> */}
                 <div className="min-w-0 w-full space-y-1.5">
                   <h3 className="text-sm font-bold text-slate-800 group-hover:text-[#0f4a85] transition-colors leading-snug">
                     {member.name}
@@ -390,7 +391,7 @@ export default function EditorialBoard() {
                 key={idx}
                 className="academic-card rounded-2xl p-5 bg-white flex flex-col items-center text-center space-y-3 group hover:border-amber-400/60"
               >
-                <MemberAvatar image={member.image} name={member.name} size="md" />
+                {/* <MemberAvatar image={member.image} name={member.name} size="md" /> */}
                 <div className="min-w-0 w-full space-y-1.5">
                   <h3 className="text-sm font-bold text-slate-800 group-hover:text-[#0f4a85] transition-colors leading-snug">
                     {member.name}
@@ -421,7 +422,7 @@ export default function EditorialBoard() {
         </section>
 
         {/* ================= SECTION: ADVISORY COMMITTEE (NATIONAL) ================= */}
-        <section className="space-y-6">
+        {/* <section className="space-y-6">
           <div className="flex items-center space-x-4">
             <div className="h-px bg-slate-300 flex-1 max-w-[100px]"></div>
             <div className="flex items-center space-x-2">
@@ -467,10 +468,10 @@ export default function EditorialBoard() {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/* ================= SECTION: ADVISORY COMMITTEE (INTERNATIONAL) ================= */}
-        <section className="space-y-6">
+        {/* <section className="space-y-6">
           <div className="flex items-center space-x-4">
             <div className="h-px bg-slate-300 flex-1 max-w-[100px]"></div>
             <div className="flex items-center space-x-2">
@@ -516,7 +517,7 @@ export default function EditorialBoard() {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
       </div>
     </div>
