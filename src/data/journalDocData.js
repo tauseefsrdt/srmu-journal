@@ -52,7 +52,24 @@ export const journalScopeTopics = [
   { id: 25, title: "Health, Society, and Public Policy", category: "Public Health" },
   { id: 26, title: "Comparative Politics and Area Studies", category: "Social Sciences" },
   { id: 27, title: "Contemporary Social, Political, and Cultural Issues", category: "Social Sciences" },
-  { id: 28, title: "Management and Commerce", category: "Management" }
+  { id: 28, title: "Management and Commerce", category: "Management" },
+  { id: 28, title: "Pharmacology", category: "Pharmacy" },
+  { id: 29, title: "Pharmaceutics", category: "Pharmacy" },
+  { id: 30, title: "Pharmaceutical Technology", category: "Pharmacy" },
+  { id: 31, title: "Pharmaceutical Chemistry", category: "Pharmacy" },
+  { id: 32, title: "Pharmacognosy", category: "Pharmacy" },
+  { id: 33, title: "Pharmaceutical Analysis", category: "Pharmacy" },
+  { id: 34, title: "Clinical Pharmacy", category: "Pharmacy" },
+  { id: 35, title: "Pharmacy Practice", category: "Pharmacy" },
+  { id: 36, title: "Biotechnology", category: "Pharmacy" },
+  { id: 37, title: "Microbiology", category: "Pharmacy" },
+  { id: 38, title: "Pharmacovigilance", category: "Pharmacy" },
+  { id: 39, title: "Toxicology", category: "Pharmacy" },
+  { id: 40, title: "Drug Discovery & Development", category: "Pharmacy" },
+  { id: 41, title: "Nanotechnology", category: "Pharmacy" },
+  { id: 42, title: "Allied Sciences", category: "Pharmacy" },
+  { id: 43, title: "Natural Plant Chemistry", category: "Pharmacy" },
+  { id: 44, title: "Plant Metabolites", category: "Pharmacy" }
 ];
 
 // General Information, Mission, and Vision matching Wireframe and Journal Mandate
