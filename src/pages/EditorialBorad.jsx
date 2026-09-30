@@ -99,7 +99,6 @@ export default function EditorialBoard() {
   };
 
   const deputyEditorsInChief = [
-
     {
       name: "Prof. (Dr.) Nabeel Ahmad",
       designation: "Director (Research)",
@@ -109,8 +108,9 @@ export default function EditorialBoard() {
     },
     {
       name: "Dr. Ram Pratap Yadav",
-      designation: "Deputy Editor-in-Chief",
+      designation: "Deputy Editor-in-Chief / Asst. Professor & Programme Coordinator, FoHSS",
       affiliation: "SRMU, Barabanki-India",
+      email: "rampratap.hum@srmu.ac.in",
       image: ramPratapImg
     },
     {
@@ -123,33 +123,39 @@ export default function EditorialBoard() {
   ];
 
   const associateEditors = [
-    { name: "Dr. Anil Kumar", designation: "Associate Editor", affiliation: "SRMU, Barabanki-India", image: anilKumarImg },
-    { name: "Dr. Shweta Shukla", designation: "Associate Editor", affiliation: "SRMU, Barabanki-India", image: shwetaShuklaImg },
-    { name: "Dr. Shilpa Shukla", designation: "Associate Editor", affiliation: "SRMU, Barabanki-India", image: shilpaShuklaImg },
-    { name: "Dr. Prakash Chandra Mishra", designation: "Associate Editor", affiliation: "SRMU, Barabanki-India", image: prakashChandraImg },
-    { name: "Dr. Shashank Shekhar Singh", designation: "Associate Editor", affiliation: "SRMU, Barabanki-India", image: shashankShekharImg },
-    { name: "Dr. Vibhav Sharma", designation: "Associate Editor", affiliation: "SRMU, Barabanki-India", image: vibhavSharmaImg },
-    { name: "Dr. Syed Asif Mehdi", designation: "Associate Editor", affiliation: "SRMU, Barabanki-India", image: syedAsifImg },
-    { name: "Dr. Seema Tripathi", designation: "Associate Editor", affiliation: "SRMU, Barabanki-India", image: null },
-    // { name: "Dr. Jay Kumar Pandey", affiliation: "DEEE", email: "jay.pandey@srmu.ac.in" },
-    // { name: "Dr. Md. Saaquib Bin Reyaz", affiliation: "FoME", email: "saquibbinreyaz.research@srmu.ac.in" },
-    // { name: "Dr. Mriyunjay Rai", affiliation: "DEEE", email: "mritunjayrai.foeee@srmu.ac.in" },
-    // { name: "Dr. Md. Zain", affiliation: "FoCE", email: "mohdzain.ce@srmu.ac.in" },
-    // { name: "Dr. Devendra Singh", affiliation: "IBST", email: "devendrasingh.ibst@srmu.ac.in" },
-    // { name: "Dr. Garima Gupta", affiliation: "IBST", email: "garimagupta.ibst@srmu.ac.in" },
-    // { name: "Dr. Rajeev Kumar", affiliation: "DCSIS", email: "rajeevkr.csis@srmu.ac.in" },
-    // { name: "Dr. Sunil K Singh", affiliation: "DEEE", email: "sunilkrsingh.foeee@srmu.ac.in" },
-    // { name: "Prof. (Dr.) Dilip Jaiswal", affiliation: "FoMSS", email: "dilipkr.maths@srmu.ac.in" },
-    // { name: "Dr. Md. Nadeem", affiliation: "DCSE", email: "mdnadeem.cse@srmu.ac.in" },
-    // { name: "Dr. Nitish Singh", affiliation: "FoPS", email: "nitish.phy@srmu.ac.in" },
-    // { name: "Dr. Rahul K Vishwakarma", affiliation: "FoCS", email: "rahulk.vishwakarma@srmu.ac.in" }
+    { name: "Dr. Anil Kumar", designation: "Associate Professor, FoHSS", affiliation: "SRMU, Barabanki-India", email: "anilkumar.hum@srmu.ac.in", image: anilKumarImg },
+    { name: "Dr. Shweta Shukla", designation: "Associate Professor, FoHSS", affiliation: "SRMU, Barabanki-India", email: "shwetashukla.hum@srmu.ac.in", image: shwetaShuklaImg },
+    { name: "Dr. Shilpa Shukla", designation: "Associate Professor, FoHSS", affiliation: "SRMU, Barabanki-India", email: "indian.sshilpa@gmail.com", image: shilpaShuklaImg },
+    { name: "Dr. Prakash Chandra Mishra", designation: "Associate Professor, ILS", affiliation: "SRMU, Barabanki-India", email: "prakash.law@srmu.ac.in", image: prakashChandraImg },
+    { name: "Dr. Shashank Shekhar Singh", designation: "Associate Professor, ILS", affiliation: "SRMU, Barabanki-India", email: "shashanshekher.ils@srmu.ac.in", image: shashankShekharImg },
+    { name: "Dr. Vibhav Sharma", designation: "Assistant Professor, Management", affiliation: "SRMU, Barabanki-India", email: "vaibhavsharma.ecocommerce@srmu.ac.in", image: vibhavSharmaImg },
+    { name: "Dr. Syed Asif Mehdi", designation: "Assistant Professor, Management", affiliation: "SRMU, Barabanki-India", email: "syedasifmehdi.management@srmu.ac.in", image: syedAsifImg },
+    { name: "Dr. Seema Tripathi", designation: "Assistant Professor, Management", affiliation: "SRMU, Barabanki-India", email: "seematripathi.imce@srmu.ac.in", image: null },
+    { name: "Dr. Shikha Srivastava", designation: "Professor, Pharmacy", affiliation: "SRMU, Barabanki-India", email: "shikhasri.pharma@srmu.ac.in", image: null },
+    { name: "Dr. Ajeet Singh", designation: "Assistant Professor, Pharmacy", affiliation: "SRMU, Barabanki-India", email: "ajeetsingh.pharmacy@srmu.ac.in", image: null },
+    { name: "Dr. Dhwani Singh", designation: "Asst. Professor, Institute of Media Studies", affiliation: "SRMU, Barabanki-India", email: "dhwanisingh.ims@srmu.ac.in", image: null },
+    { name: "Dr. Amit Kumar Singh", designation: "Assistant Professor, Institute of Media Studies", affiliation: "SRMU, Barabanki-India", email: "amitkumarsingh.Ims@srmu.ac.in", image: null },
+    { name: "Dr. Jay Kumar Pandey", designation: "Associate Editor", affiliation: "DEEE, SRMU", email: "jay.pandey@srmu.ac.in", image: null },
+    { name: "Dr. Md. Saaquib Bin Reyaz", designation: "Associate Editor", affiliation: "FoME, SRMU", email: "saquibbinreyaz.research@srmu.ac.in", image: null },
+    { name: "Dr. Mriyunjay Rai", designation: "Associate Editor", affiliation: "DEEE, SRMU", email: "mritunjayrai.foeee@srmu.ac.in", image: null },
+    { name: "Dr. Md. Zain", designation: "Associate Editor", affiliation: "FoCE, SRMU", email: "mohdzain.ce@srmu.ac.in", image: null },
+    { name: "Dr. Devendra Singh", designation: "Associate Editor", affiliation: "IBST, SRMU", email: "devendrasingh.ibst@srmu.ac.in", image: null },
+    { name: "Dr. Garima Gupta", designation: "Associate Editor", affiliation: "IBST, SRMU", email: "garimagupta.ibst@srmu.ac.in", image: null },
+    { name: "Dr. Rajeev Kumar", designation: "Associate Editor", affiliation: "DCSIS, SRMU", email: "rajeevkr.csis@srmu.ac.in", image: null },
+    { name: "Dr. Sunil K Singh", designation: "Associate Editor", affiliation: "DEEE, SRMU", email: "sunilkrsingh.foeee@srmu.ac.in", image: null },
+    { name: "Prof. (Dr.) Dilip Jaiswal", designation: "Associate Editor", affiliation: "FoMSS, SRMU", email: "dilipkr.maths@srmu.ac.in", image: null },
+    { name: "Dr. Md. Nadeem", designation: "Associate Editor", affiliation: "DCSE, SRMU", email: "mdnadeem.cse@srmu.ac.in", image: null },
+    { name: "Dr. Nitish Singh", designation: "Associate Editor", affiliation: "FoPS, SRMU", email: "nitish.phy@srmu.ac.in", image: null },
+    { name: "Dr. Rahul K Vishwakarma", designation: "Associate Editor", affiliation: "FoCS, SRMU", email: "rahulk.vishwakarma@srmu.ac.in", image: null }
   ];
 
   const advisoryCommittee = [
-    { name: "Prof. B.M. Dixit", designation: "Advisory Committee", affiliation: "SRMU, Barabanki-India", image: bmDixitImg },
-    { name: "Prof. Narendra Bahadur Singh", designation: "Advisory Committee", affiliation: "SRMU, Barabanki-India", image: narendraBahadurImg },
-    { name: "Prof. Veena Singh", designation: "Advisory Committee", affiliation: "SRMU, Barabanki-India", image: veenaSinghImg },
-    { name: "Prof. Madhu Dixit", designation: "Advisory Committee", affiliation: "SRMU, Barabanki-India", image: madhuDixitImg }
+    { name: "Prof. B.M. Dixit", designation: "Director, INSH", affiliation: "SRMU, Barabanki-India", email: "director.insh@srmu.ac.in", image: bmDixitImg },
+    { name: "Prof. Narendra Bahadur Singh", designation: "Director, Law", affiliation: "SRMU, Barabanki-India", email: "director.Law@srmu.ac.in", image: narendraBahadurImg },
+    { name: "Prof. Veena Singh", designation: "Head, IMCE", affiliation: "SRMU, Barabanki-India", email: "veenasingh.imce@srmu.ac.in", image: veenaSinghImg },
+    { name: "Prof. Madhu Dixit", designation: "Head, Commerce", affiliation: "SRMU, Barabanki-India", email: "madhu.mgmt@srmu.ac.in", image: madhuDixitImg },
+    { name: "Prof. Manju Pandey", designation: "Director, Pharmacy", affiliation: "SRMU, Barabanki-India", email: "director.pharma@srmu.ac.in", image: null },
+    { name: "Dr. Pradeep Kumar", designation: "Director, IMS", affiliation: "SRMU, Barabanki-India", email: "Pradeepkumar.ims@srmu.ac.in", image: null }
   ];
 
   const advisoryCommitteeNational = [
@@ -352,8 +358,13 @@ export default function EditorialBoard() {
                   <h3 className="text-sm font-bold text-slate-800 group-hover:text-[#0f4a85] transition-colors leading-snug">
                     {member.name}
                   </h3>
-                  {member.affiliation && (
+                  {member.designation && (
                     <div className="text-[11px] font-semibold text-slate-700">
+                      {member.designation}
+                    </div>
+                  )}
+                  {member.affiliation && (
+                    <div className="text-[10px] text-slate-500 leading-tight">
                       {member.affiliation}
                     </div>
                   )}
@@ -422,7 +433,7 @@ export default function EditorialBoard() {
         </section>
 
         {/* ================= SECTION: ADVISORY COMMITTEE (NATIONAL) ================= */}
-        {/* <section className="space-y-6">
+        <section className="space-y-6">
           <div className="flex items-center space-x-4">
             <div className="h-px bg-slate-300 flex-1 max-w-[100px]"></div>
             <div className="flex items-center space-x-2">
@@ -440,7 +451,7 @@ export default function EditorialBoard() {
                 key={idx}
                 className="academic-card rounded-2xl p-5 bg-white flex flex-col items-center text-center space-y-3 group hover:border-amber-400/60"
               >
-                <MemberAvatar image={member.image} name={member.name} size="md" />
+                {/* <MemberAvatar image={member.image} name={member.name} size="md" /> */}
                 <div className="min-w-0 w-full space-y-1.5">
                   <h3 className="text-sm font-bold text-slate-800 group-hover:text-[#0f4a85] transition-colors leading-snug">
                     {member.name}
@@ -468,10 +479,10 @@ export default function EditorialBoard() {
               </div>
             ))}
           </div>
-        </section> */}
+        </section>
 
         {/* ================= SECTION: ADVISORY COMMITTEE (INTERNATIONAL) ================= */}
-        {/* <section className="space-y-6">
+        <section className="space-y-6">
           <div className="flex items-center space-x-4">
             <div className="h-px bg-slate-300 flex-1 max-w-[100px]"></div>
             <div className="flex items-center space-x-2">
@@ -489,7 +500,7 @@ export default function EditorialBoard() {
                 key={idx}
                 className="academic-card rounded-2xl p-5 bg-white flex flex-col items-center text-center space-y-3 group hover:border-blue-400/60"
               >
-                <MemberAvatar image={member.image} name={member.name} size="md" />
+                {/* <MemberAvatar image={member.image} name={member.name} size="md" /> */}
                 <div className="min-w-0 w-full space-y-1.5">
                   <h3 className="text-sm font-bold text-slate-800 group-hover:text-[#0f4a85] transition-colors leading-snug">
                     {member.name}
@@ -517,7 +528,7 @@ export default function EditorialBoard() {
               </div>
             ))}
           </div>
-        </section> */}
+        </section>
 
       </div>
     </div>

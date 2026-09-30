@@ -53,23 +53,23 @@ export const journalScopeTopics = [
   { id: 26, title: "Comparative Politics and Area Studies", category: "Social Sciences" },
   { id: 27, title: "Contemporary Social, Political, and Cultural Issues", category: "Social Sciences" },
   { id: 28, title: "Management and Commerce", category: "Management" },
-  { id: 28, title: "Pharmacology", category: "Pharmacy" },
-  { id: 29, title: "Pharmaceutics", category: "Pharmacy" },
-  { id: 30, title: "Pharmaceutical Technology", category: "Pharmacy" },
-  { id: 31, title: "Pharmaceutical Chemistry", category: "Pharmacy" },
-  { id: 32, title: "Pharmacognosy", category: "Pharmacy" },
-  { id: 33, title: "Pharmaceutical Analysis", category: "Pharmacy" },
-  { id: 34, title: "Clinical Pharmacy", category: "Pharmacy" },
-  { id: 35, title: "Pharmacy Practice", category: "Pharmacy" },
-  { id: 36, title: "Biotechnology", category: "Pharmacy" },
-  { id: 37, title: "Microbiology", category: "Pharmacy" },
-  { id: 38, title: "Pharmacovigilance", category: "Pharmacy" },
-  { id: 39, title: "Toxicology", category: "Pharmacy" },
-  { id: 40, title: "Drug Discovery & Development", category: "Pharmacy" },
-  { id: 41, title: "Nanotechnology", category: "Pharmacy" },
-  { id: 42, title: "Allied Sciences", category: "Pharmacy" },
-  { id: 43, title: "Natural Plant Chemistry", category: "Pharmacy" },
-  { id: 44, title: "Plant Metabolites", category: "Pharmacy" }
+  { id: 29, title: "Pharmacology", category: "Pharmacy" },
+  { id: 30, title: "Pharmaceutics", category: "Pharmacy" },
+  { id: 31, title: "Pharmaceutical Technology", category: "Pharmacy" },
+  { id: 32, title: "Pharmaceutical Chemistry", category: "Pharmacy" },
+  { id: 33, title: "Pharmacognosy", category: "Pharmacy" },
+  { id: 34, title: "Pharmaceutical Analysis", category: "Pharmacy" },
+  { id: 35, title: "Clinical Pharmacy", category: "Pharmacy" },
+  { id: 36, title: "Pharmacy Practice", category: "Pharmacy" },
+  { id: 37, title: "Biotechnology", category: "Pharmacy" },
+  { id: 38, title: "Microbiology", category: "Pharmacy" },
+  { id: 39, title: "Pharmacovigilance", category: "Pharmacy" },
+  { id: 40, title: "Toxicology", category: "Pharmacy" },
+  { id: 41, title: "Drug Discovery & Development", category: "Pharmacy" },
+  { id: 42, title: "Nanotechnology", category: "Pharmacy" },
+  { id: 43, title: "Allied Sciences", category: "Pharmacy" },
+  { id: 44, title: "Natural Plant Chemistry", category: "Pharmacy" },
+  { id: 45, title: "Plant Metabolites", category: "Pharmacy" }
 ];
 
 // General Information, Mission, and Vision matching Wireframe and Journal Mandate
@@ -79,43 +79,95 @@ export const generalInfoCards = [
     num: "01",
     title: "Our Mission",
     badge: "Publication Purpose",
-    summary: "Dedicated to promoting high-quality, authentic, and rigorous research in diverse disciplines.",
+    summary:
+      "The journal is committed to promoting high-quality, authentic, and rigorous research while providing an international platform for critical thinking, intellectual diversity, innovation, and new perspectives in academic research.",
     points: [
       "To promote high-quality, authentic, and rigorous research in diverse disciplines.",
-      "To provide an international platform for critical thinking, intellectual diversity, and innovation.",
-      "To uphold the highest standards of academic integrity, ethical research, and scholarly publishing.",
-      "To encourage research addressing contemporary global and local challenges.",
-      "To endorse and facilitate international collaboration among scholars.",
-      "To contribute to knowledge creation and dissemination for the betterment of society."
+      "To provide an international platform for scholars, researchers, and academicians for critical thinking, intellectual diversity, innovation, and new perspectives in academic research.",
+      "To uphold the highest standards of academic integrity, ethical research, peer review, and scholarly publishing.",
+      "To encourage research addressing contemporary global and local challenges, including democracy, governance, social justice, gender equality, culture, education, development, public health, public policy, international and national law, Management and Commerce, Education and Journalism.",
+      "To endorse and facilitate international collaboration and dialogue among scholars from different countries, cultures, and academic traditions.",
+      "Scholars can contribute to the creation, dissemination, and application of knowledge for the betterment of society."
     ],
-    details: "The journal provides an international platform for scholars, researchers, academicians for critical thinking, intellectual diversity, innovation, and new perspectives in academic research."
+    details:
+      "The journal has a mission to promote high-quality, authentic, and rigorous research in diverse disciplines and to provide an international platform for scholars, researchers, and academicians. It seeks to uphold academic integrity, ethical research, peer review, and scholarly publishing while encouraging research addressing contemporary global and local challenges."
   },
+
   {
     id: "general-info",
     num: "02",
     title: "Scope & Domains",
     badge: "Official Journal Details",
     isPrimary: true,
-    summary: "The International Journal of Multidisciplinary Advanced Research (IJMAR) is a multidisciplinary and interdisciplinary scholarly journal dedicated to the publication of original, high-quality, and rigorous research.",
+    summary:
+      "The International Journal of Multidisciplinary Advanced Research (IJMAR) is a multidisciplinary and interdisciplinary scholarly journal dedicated to the publication of original, high-quality, and rigorous research across a broad range of academic fields.",
     points: [
-      "Covers Humanities and Social Sciences, Public Health, Law, Management and Commerce, Education and Journalism.",
-      "Fosters critical inquiry and meaningful academic dialogue.",
-      "Encourages research that contributes to knowledge creation, evidence-based policymaking, social transformation, and sustainable development."
+      "Political Science and International Relations",
+      "Public Administration and Public Policy",
+      "Sociology and Social Anthropology",
+      "Economics and Development Studies",
+      "History and Archaeology",
+      "Philosophy and Ethics",
+      "Psychology and Behavioural Studies",
+      "Education and Educational Studies",
+      "Geography and Environmental Studies",
+      "Gender Studies and Feminist Studies",
+      "Cultural Studies and Media Studies",
+      "Language, Linguistics, and Literature",
+      "Religion, Society, and Civilization",
+      "Law, Justice, and Human Rights",
+      "Peace and Conflict Studies",
+      "Governance, Democracy, and Citizenship",
+      "Globalization and International Studies",
+      "Rural and Urban Studies",
+      "Population and Development Studies",
+      "Migration, Diaspora, and Identity Studies",
+      "Social Work and Community Development",
+      "Indigenous and Tribal Studies",
+      "Digital Society, Technology, and Society",
+      "Sustainable Development and Environmental Governance",
+      "Health, Society, and Public Policy",
+      "Comparative Politics and Area Studies",
+      "Contemporary Social, Political, and Cultural Issues",
+      "Management and Commerce",
+      "Pharmaceutical & Biomedical Sciences",
+      "Pharmacology",
+      "Pharmaceutics",
+      "Pharmaceutical Technology",
+      "Pharmaceutical Chemistry",
+      "Pharmacognosy",
+      "Pharmaceutical Analysis",
+      "Clinical Pharmacy",
+      "Pharmacy Practice",
+      "Biotechnology",
+      "Microbiology",
+      "Pharmacovigilance",
+      "Toxicology",
+      "Drug Discovery & Development",
+      "Nanotechnology",
+      "Allied Sciences",
+      "Natural Plant Chemistry",
+      "Plant Metabolites"
     ],
-    details: "The journal provides an international platform for academicians, researchers, scholars, policymakers, practitioners, and emerging researchers to share innovative ideas, theoretical perspectives, empirical findings, and critical analysis."
+    details:
+      "The International Journal of Multidisciplinary Advanced Research (IJMAR) provides an international platform for academicians, researchers, scholars, policymakers, practitioners, and emerging researchers to share innovative ideas, theoretical perspectives, empirical findings, and critical analysis. The journal covers, but is not limited to, the listed areas across Humanities and Social Sciences, Public Health, Law, Management and Commerce, Education and Journalism, and Pharmaceutical & Biomedical Sciences."
   },
+
   {
     id: "vision",
     num: "03",
     title: "Our Vision",
     badge: "Future Scope",
-    summary: "To become a globally recognized and intellectually vibrant platform for advancing knowledge, critical inquiry, innovation, and interdisciplinary research.",
+    summary:
+      "To become a globally recognized and intellectually vibrant platform for advancing knowledge, critical inquiry, innovation, and interdisciplinary research.",
     points: [
-      "Globally recognized platform for advancing knowledge and critical inquiry.",
-      "Promoting academics globally including cultural connecting.",
-      "Deepening understanding of contemporary social, political, cultural, economic, and human challenges."
+      "To advance knowledge, critical inquiry, innovation, and interdisciplinary research.",
+      "To promote academics globally, including cultural connection and interdisciplinary understanding.",
+      "To develop deeper understanding of contemporary social, political, cultural, economic, and human challenges.",
+      "To promote interdisciplinary research across Humanities and Social Sciences, Public Health, Law, Management and Commerce, Education and Journalism, and Pharmaceutical & Biomedical Sciences."
     ],
-    details: "The International Journal of Multidisciplinary Advanced Research (IJMAR) initiated by Shri Ramswaroop Memorial University aspired to become a globally recognized and intellectually vibrant platform for advancing knowledge, critical inquiry, innovation, and interdisciplinary research in the fields of Humanities and Social Sciences, Public Health, Law, Management and Commerce, Education and Journalism."
+    details:
+      "The International Journal of Multidisciplinary Advanced Research (IJMAR), initiated by Shri Ramswaroop Memorial University, aspired to become a globally recognized and intellectually vibrant platform for advancing knowledge, critical inquiry, innovation, and interdisciplinary research in the fields of Humanities and Social Sciences, Public Health, Law, Management and Commerce, Education and Journalism & Pharmaceutical & Biomedical Sciences. The journal envisions promoting academics globally including cultural and connecting inter-disciplinary deeper understanding of contemporary social, political, cultural, economic, and human challenges."
   }
 ];
 
