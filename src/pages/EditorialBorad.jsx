@@ -6,9 +6,7 @@ import {
   Mail,
   Building2,
   ShieldCheck,
-  GraduationCap,
-  User,
-  Globe
+  GraduationCap
 } from 'lucide-react';
 import PageHero from '../components/PageHero';
 
@@ -134,19 +132,7 @@ export default function EditorialBoard() {
     { name: "Dr. Shikha Srivastava", designation: "Professor, Pharmacy", affiliation: "SRMU, Barabanki-India", email: "shikhasri.pharma@srmu.ac.in", image: null },
     { name: "Dr. Ajeet Singh", designation: "Assistant Professor, Pharmacy", affiliation: "SRMU, Barabanki-India", email: "ajeetsingh.pharmacy@srmu.ac.in", image: null },
     { name: "Dr. Dhwani Singh", designation: "Asst. Professor, Institute of Media Studies", affiliation: "SRMU, Barabanki-India", email: "dhwanisingh.ims@srmu.ac.in", image: null },
-    { name: "Dr. Amit Kumar Singh", designation: "Assistant Professor, Institute of Media Studies", affiliation: "SRMU, Barabanki-India", email: "amitkumarsingh.Ims@srmu.ac.in", image: null },
-    { name: "Dr. Jay Kumar Pandey", designation: "Associate Editor", affiliation: "DEEE, SRMU", email: "jay.pandey@srmu.ac.in", image: null },
-    { name: "Dr. Md. Saaquib Bin Reyaz", designation: "Associate Editor", affiliation: "FoME, SRMU", email: "saquibbinreyaz.research@srmu.ac.in", image: null },
-    { name: "Dr. Mriyunjay Rai", designation: "Associate Editor", affiliation: "DEEE, SRMU", email: "mritunjayrai.foeee@srmu.ac.in", image: null },
-    { name: "Dr. Md. Zain", designation: "Associate Editor", affiliation: "FoCE, SRMU", email: "mohdzain.ce@srmu.ac.in", image: null },
-    { name: "Dr. Devendra Singh", designation: "Associate Editor", affiliation: "IBST, SRMU", email: "devendrasingh.ibst@srmu.ac.in", image: null },
-    { name: "Dr. Garima Gupta", designation: "Associate Editor", affiliation: "IBST, SRMU", email: "garimagupta.ibst@srmu.ac.in", image: null },
-    { name: "Dr. Rajeev Kumar", designation: "Associate Editor", affiliation: "DCSIS, SRMU", email: "rajeevkr.csis@srmu.ac.in", image: null },
-    { name: "Dr. Sunil K Singh", designation: "Associate Editor", affiliation: "DEEE, SRMU", email: "sunilkrsingh.foeee@srmu.ac.in", image: null },
-    { name: "Prof. (Dr.) Dilip Jaiswal", designation: "Associate Editor", affiliation: "FoMSS, SRMU", email: "dilipkr.maths@srmu.ac.in", image: null },
-    { name: "Dr. Md. Nadeem", designation: "Associate Editor", affiliation: "DCSE, SRMU", email: "mdnadeem.cse@srmu.ac.in", image: null },
-    { name: "Dr. Nitish Singh", designation: "Associate Editor", affiliation: "FoPS, SRMU", email: "nitish.phy@srmu.ac.in", image: null },
-    { name: "Dr. Rahul K Vishwakarma", designation: "Associate Editor", affiliation: "FoCS, SRMU", email: "rahulk.vishwakarma@srmu.ac.in", image: null }
+    { name: "Dr. Amit Kumar Singh", designation: "Assistant Professor, Institute of Media Studies", affiliation: "SRMU, Barabanki-India", email: "amitkumarsingh.Ims@srmu.ac.in", image: null }
   ];
 
   const advisoryCommittee = [
@@ -156,28 +142,6 @@ export default function EditorialBoard() {
     { name: "Prof. Madhu Dixit", designation: "Head, Commerce", affiliation: "SRMU, Barabanki-India", email: "madhu.mgmt@srmu.ac.in", image: madhuDixitImg },
     { name: "Prof. Manju Pandey", designation: "Director, Pharmacy", affiliation: "SRMU, Barabanki-India", email: "director.pharma@srmu.ac.in", image: null },
     { name: "Dr. Pradeep Kumar", designation: "Director, IMS", affiliation: "SRMU, Barabanki-India", email: "Pradeepkumar.ims@srmu.ac.in", image: null }
-  ];
-
-  const advisoryCommitteeNational = [
-    { name: "Prof. (Dr.) B. M. Dixit", designation: "Dir. (INSH)", affiliation: "SRMU", email: "director.insh@srmu.ac.in" },
-    { name: "Prof. (Dr.) Apurva Anand", designation: "Dir. (IoT)", affiliation: "SRMU", email: "director.engg@srmu.ac.in" },
-    { name: "Prof. (Dr.) Tabish Kidwai", designation: "Dir. (IBST)", affiliation: "SRMU", email: "director.ibst@srmu.ac.in" },
-    { name: "Prof. (Dr.) R.S. Bajpai", designation: "HoD. (DEEE)", affiliation: "SRMU", email: "dean.ee@srmu.ac.in" },
-    { name: "Prof. (Dr.) Abhishek Saxena", designation: "Dean (FoCE)", affiliation: "SRMU", email: "dean.ce@srmu.ac.in" },
-    { name: "Prof. (Dr.) Rajesh Porval", designation: "Dean (FoME)", affiliation: "SRMU", email: "dean.me@srmu.ac.in" },
-    { name: "Prof. (Dr.) V. N. Pathak", designation: "Dean (FoMSS)", affiliation: "SRMU", email: "dean.maths@srmu.ac.in" },
-    { name: "Prof. (Dr.) R. G. Singh", designation: "Dean (FoPS)", affiliation: "SRMU", email: "dean.phy@srmu.ac.in" },
-    { name: "Dr. Shobhit Sinha", designation: "HoD (DCSIS)", affiliation: "SRMU", email: "hod.cse@srmu.ac.in" },
-    { name: "Dr. Sadhana Singh", designation: "HoD (FoCS)", affiliation: "SRMU", email: "dean.cy@srmu.ac.in" },
-    { name: "Dr. Kavita Sahu", designation: "Asstt. Prof. (DoCSE)", affiliation: "Dr. Harsingh Gour Vishwavidyalaya, Sagar, M.P." }
-  ];
-
-  const advisoryCommitteeInternational = [
-    { name: "Dr. Saifullah Khalid", designation: "Principal Scientist", affiliation: "IBMM Research, Khartoum, Sudan", email: "skhalid@ibmmacl.org" },
-    { name: "Dr. Rashad Abaszade", designation: "Turan International Research Institute", affiliation: "Azerbaijan" },
-    { name: "Dr. Shri Krishna Pandey", designation: "Head, Quality Assurance", affiliation: "Symbiosis International University, Dubai, UAE", email: "skpandey@siu-dubai.ac.ae" },
-    { name: "Dr. Shruti Pandey", affiliation: "Missouri University of Science and Technology Rolla, Missouri, USA", email: "spz8c@mst.edu" },
-    { name: "Prof (Dr.) Shamimul Qamar", affiliation: "Faculty of Sciences & Managements, King Khalid University, Abha, KSA", email: "Sqamar@kku.edu.sa" }
   ];
 
   return (
@@ -302,7 +266,7 @@ export default function EditorialBoard() {
             {deputyEditorsInChief.map((deputy, idx) => (
               <div
                 key={idx}
-                className="academic-card rounded-2xl p-6 sm:p-8 flex flex-col  items-center sm:items-start text-center sm:text-left gap-5 bg-white relative overflow-hidden group"
+                className="academic-card rounded-2xl p-6 sm:p-8 flex flex-col items-center sm:items-start text-center sm:text-left gap-5 bg-white relative overflow-hidden group"
               >
                 <MemberAvatar image={deputy.image} name={deputy.name} size="sm" />
 
@@ -401,104 +365,6 @@ export default function EditorialBoard() {
               <div
                 key={idx}
                 className="academic-card rounded-2xl p-5 bg-white flex flex-col items-center text-center space-y-3 group hover:border-amber-400/60"
-              >
-                {/* <MemberAvatar image={member.image} name={member.name} size="md" /> */}
-                <div className="min-w-0 w-full space-y-1.5">
-                  <h3 className="text-sm font-bold text-slate-800 group-hover:text-[#0f4a85] transition-colors leading-snug">
-                    {member.name}
-                  </h3>
-                  {member.designation && (
-                    <div className="text-[11px] font-semibold text-slate-700">
-                      {member.designation}
-                    </div>
-                  )}
-                  {member.affiliation && (
-                    <div className="text-[10px] text-slate-500 leading-tight">
-                      {member.affiliation}
-                    </div>
-                  )}
-                  {member.email && (
-                    <a
-                      href={`mailto:${member.email}`}
-                      className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-blue-50 hover:bg-blue-100 text-[#0f4a85] text-[10px] font-medium border border-blue-100 transition-colors break-all"
-                    >
-                      <Mail className="w-2.5 h-2.5 text-slate-500 shrink-0" />
-                      <span>{member.email}</span>
-                    </a>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* ================= SECTION: ADVISORY COMMITTEE (NATIONAL) ================= */}
-        <section className="space-y-6">
-          <div className="flex items-center space-x-4">
-            <div className="h-px bg-slate-300 flex-1 max-w-[100px]"></div>
-            <div className="flex items-center space-x-2">
-              <GraduationCap className="w-5 h-5 text-amber-500" />
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#0f4a85] tracking-tight">
-                Advisory Committee (National)
-              </h2>
-            </div>
-            <div className="h-px bg-slate-300 flex-1"></div>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            {advisoryCommitteeNational.map((member, idx) => (
-              <div
-                key={idx}
-                className="academic-card rounded-2xl p-5 bg-white flex flex-col items-center text-center space-y-3 group hover:border-amber-400/60"
-              >
-                {/* <MemberAvatar image={member.image} name={member.name} size="md" /> */}
-                <div className="min-w-0 w-full space-y-1.5">
-                  <h3 className="text-sm font-bold text-slate-800 group-hover:text-[#0f4a85] transition-colors leading-snug">
-                    {member.name}
-                  </h3>
-                  {member.designation && (
-                    <div className="text-[11px] font-semibold text-slate-700">
-                      {member.designation}
-                    </div>
-                  )}
-                  {member.affiliation && (
-                    <div className="text-[10px] text-slate-500 leading-tight">
-                      {member.affiliation}
-                    </div>
-                  )}
-                  {member.email && (
-                    <a
-                      href={`mailto:${member.email}`}
-                      className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-blue-50 hover:bg-blue-100 text-[#0f4a85] text-[10px] font-medium border border-blue-100 transition-colors break-all"
-                    >
-                      <Mail className="w-2.5 h-2.5 text-slate-500 shrink-0" />
-                      <span>{member.email}</span>
-                    </a>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* ================= SECTION: ADVISORY COMMITTEE (INTERNATIONAL) ================= */}
-        <section className="space-y-6">
-          <div className="flex items-center space-x-4">
-            <div className="h-px bg-slate-300 flex-1 max-w-[100px]"></div>
-            <div className="flex items-center space-x-2">
-              <Globe className="w-5 h-5 text-amber-500" />
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#0f4a85] tracking-tight">
-                Advisory Committee (International)
-              </h2>
-            </div>
-            <div className="h-px bg-slate-300 flex-1"></div>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-            {advisoryCommitteeInternational.map((member, idx) => (
-              <div
-                key={idx}
-                className="academic-card rounded-2xl p-5 bg-white flex flex-col items-center text-center space-y-3 group hover:border-blue-400/60"
               >
                 {/* <MemberAvatar image={member.image} name={member.name} size="md" /> */}
                 <div className="min-w-0 w-full space-y-1.5">
