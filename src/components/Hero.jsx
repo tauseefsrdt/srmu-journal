@@ -132,8 +132,10 @@ export default function Hero() {
                   Official Publication Mandate
                 </div> */}
                 <p className="text-xs sm:text-sm text-slate-700 leading-normal">
-                  IJMAR, published by <strong>Shri Ramswaroop Memorial University</strong>, is a multidisciplinary journal with an aim to publish high-quality, original and innovative research in Humanities, Legal Studies, Management, Commerce, and Economics.
+                  IJMAR, published by <strong>Shri Ramswaroop Memorial University</strong>, is a multidisciplinary journal with an aim to publish high-quality, original and innovative research in Humanities, Legal Studies, Management, Commerce, Economics, Pharmacy, and Health Sciences.
                 </p>
+
+
                 {/* <p className="text-xs text-slate-500 leading-normal">
                   Accepts original research, experimental validations, review papers, and short communications across 23+ core disciplines.
                 </p> */}

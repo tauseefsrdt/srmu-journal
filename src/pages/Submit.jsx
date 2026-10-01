@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  Send, 
-  UploadCloud, 
-  FileText, 
-  CheckCircle2, 
-  ShieldCheck, 
-  Sparkles, 
+import {
+  Send,
+  UploadCloud,
+  FileText,
+  CheckCircle2,
+  ShieldCheck,
+  Sparkles,
   AlertCircle,
   Download,
   Info
@@ -47,7 +47,7 @@ export default function Submit() {
 
   return (
     <div className="min-h-screen bg-[#f8fafc] text-slate-800">
-      
+
       {/* Page Hero */}
       <PageHero
         title="Submit Your Manuscript"
@@ -60,7 +60,7 @@ export default function Submit() {
       />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 text-left">
-        
+
         {submitted ? (
           <div className="academic-card p-8 sm:p-12 rounded-3xl bg-white text-center space-y-4 animate-in zoom-in-95 duration-200">
             <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto">
@@ -89,9 +89,9 @@ export default function Submit() {
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-8">
-            
+
             {/* Quick Template Download Reminder */}
-            <div className="p-5 rounded-2xl bg-amber-50 border border-amber-200 flex items-center justify-between gap-4">
+            {/* <div className="p-5 rounded-2xl bg-amber-50 border border-amber-200 flex items-center justify-between gap-4">
               <div className="flex items-center space-x-3 text-xs text-amber-950">
                 <Info className="w-5 h-5 text-amber-600 shrink-0" />
                 <span>Ensure your paper conforms to the official <strong>`13. Template.doc`</strong> structure and IEEE citation rules.</span>
@@ -102,7 +102,7 @@ export default function Submit() {
               >
                 View Template
               </Link>
-            </div>
+            </div> */}
 
             {/* Section 1: Corresponding Author Details */}
             <div className="academic-card p-6 sm:p-8 rounded-3xl bg-white space-y-5">
@@ -117,7 +117,7 @@ export default function Submit() {
                     type="text"
                     required
                     value={formData.authorName}
-                    onChange={(e) => setFormData({...formData, authorName: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, authorName: e.target.value })}
                     placeholder="Prof. (Dr.) Jane Doe"
                     className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-blue-600"
                   />
@@ -129,7 +129,7 @@ export default function Submit() {
                     type="email"
                     required
                     value={formData.email}
-                    onChange={(e) => setFormData({...formData, email: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     placeholder="author@university.edu"
                     className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-blue-600"
                   />
@@ -141,7 +141,7 @@ export default function Submit() {
                     type="text"
                     required
                     value={formData.affiliation}
-                    onChange={(e) => setFormData({...formData, affiliation: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, affiliation: e.target.value })}
                     placeholder="Shri Ramswaroop Memorial University"
                     className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-blue-600"
                   />
@@ -152,7 +152,7 @@ export default function Submit() {
                   <input
                     type="text"
                     value={formData.department}
-                    onChange={(e) => setFormData({...formData, department: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, department: e.target.value })}
                     placeholder="Dept. of Computer Science & Engineering"
                     className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-blue-600"
                   />
@@ -164,7 +164,7 @@ export default function Submit() {
                     type="text"
                     required
                     value={formData.country}
-                    onChange={(e) => setFormData({...formData, country: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, country: e.target.value })}
                     placeholder="Lucknow, India"
                     className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-blue-600"
                   />
@@ -175,7 +175,7 @@ export default function Submit() {
                   <input
                     type="text"
                     value={formData.orcid}
-                    onChange={(e) => setFormData({...formData, orcid: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, orcid: e.target.value })}
                     placeholder="0000-0002-1825-0097"
                     className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-blue-600"
                   />
@@ -196,7 +196,7 @@ export default function Submit() {
                     type="text"
                     required
                     value={formData.title}
-                    onChange={(e) => setFormData({...formData, title: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, title: e.target.value })}
                     placeholder="Concise, informative, and free of unnecessary abbreviations..."
                     className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-blue-600"
                   />
@@ -206,7 +206,7 @@ export default function Submit() {
                   <label className="font-bold text-slate-700">Primary Subject Domain *</label>
                   <select
                     value={formData.category}
-                    onChange={(e) => setFormData({...formData, category: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, category: e.target.value })}
                     className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-blue-600 bg-white"
                   >
                     {journalScopeTopics.map(t => (
@@ -221,7 +221,7 @@ export default function Submit() {
                     rows={4}
                     required
                     value={formData.abstract}
-                    onChange={(e) => setFormData({...formData, abstract: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, abstract: e.target.value })}
                     placeholder="State objective, brief methodology, major findings, and significance without citations..."
                     className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-blue-600"
                   ></textarea>
@@ -233,7 +233,7 @@ export default function Submit() {
                     type="text"
                     required
                     value={formData.keywords}
-                    onChange={(e) => setFormData({...formData, keywords: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, keywords: e.target.value })}
                     placeholder="Metamaterials, 5G Networks, Optimization, Machine Learning"
                     className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-blue-600"
                   />
@@ -255,7 +255,7 @@ export default function Submit() {
                   type="file"
                   required
                   accept=".doc,.docx,.pdf"
-                  onChange={(e) => setFormData({...formData, manuscriptFile: e.target.files[0]})}
+                  onChange={(e) => setFormData({ ...formData, manuscriptFile: e.target.files[0] })}
                   className="mt-3 text-xs text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-[#0f4a85] file:text-white hover:file:bg-blue-800 cursor-pointer"
                 />
               </div>
@@ -268,7 +268,7 @@ export default function Submit() {
                   type="checkbox"
                   required
                   checked={formData.acknowledgedChecklist}
-                  onChange={(e) => setFormData({...formData, acknowledgedChecklist: e.target.checked})}
+                  onChange={(e) => setFormData({ ...formData, acknowledgedChecklist: e.target.checked })}
                   className="mt-1 w-4 h-4 rounded text-blue-600 focus:ring-blue-500"
                 />
                 <span className="text-slate-700 leading-relaxed font-medium">

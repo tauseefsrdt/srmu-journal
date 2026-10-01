@@ -111,7 +111,7 @@ export default function GeneralInfo() {
             {generalInfoCards.map((item) => (
               <div
                 key={item.id}
-                className={`geninfo-card academic-card relative rounded-2xl p-6 sm:p-7 flex flex-col justify-between group ${item.isPrimary ? 'border-blue-500/50 md:-translate-y-1.5' : ''
+                className={`geninfo-card academic-card max-h-[600px] overflow-y-auto relative rounded-2xl p-6 sm:p-7 flex flex-col justify-between group ${item.isPrimary ? 'border-blue-500/50 md:-translate-y-1.5' : ''
                   }`}
               >
                 {/* Accent Top Bar */}
@@ -166,7 +166,7 @@ export default function GeneralInfo() {
                 </div>
 
                 {/* Action Trigger -> Routes to full page */}
-                <div className="pt-5 mt-5 border-t border-slate-100">
+                {/* <div className="pt-5 mt-5 border-t border-slate-100">
                   <Link
                     to={item.id === 'general-info' ? '/publication-details' : '/vision-scope'}
                     className={`w-full flex items-center justify-center space-x-1.5 py-2.5 px-3.5 rounded-xl text-xs font-bold transition-all duration-200 ${item.isPrimary
@@ -177,7 +177,7 @@ export default function GeneralInfo() {
                     <span>Read Full {item.title} Page</span>
                     <ChevronRight className="w-3 h-3" />
                   </Link>
-                </div>
+                </div> */}
 
               </div>
             ))}
