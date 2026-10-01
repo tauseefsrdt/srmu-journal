@@ -90,7 +90,7 @@ export default function EditorialBoard() {
 
   const editorInChief = {
     name: "Prof. (Dr.) Vijay Tiwari",
-    designation: "Editor-in-Chief / Hon'ble Vice Chancellor",
+    designation: " Hon'ble Vice Chancellor",
     affiliation: "SRMU, Barabanki-India",
     email: "vc@srmu.ac.in",
     image: vijayTiwariImg
@@ -106,7 +106,7 @@ export default function EditorialBoard() {
     },
     {
       name: "Dr. Ram Pratap Yadav",
-      designation: "Deputy Editor-in-Chief / Asst. Professor & Programme Coordinator, FoHSS",
+      designation: "Asst. Professor & Programme Coordinator, FoHSS",
       affiliation: "SRMU, Barabanki-India",
       email: "rampratap.hum@srmu.ac.in",
       image: ramPratapImg
