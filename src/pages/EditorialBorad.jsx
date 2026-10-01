@@ -165,7 +165,7 @@ export default function EditorialBoard() {
             International Journal of Multidisciplinary Advanced Research (IJMAR)
           </h2>
           <p className="text-slate-600 font-bold text-lg sm:text-xl max-w-4xl">
-            (A Multidisciplinary Journal of Humanities, Law, Management and Commerce)
+            (A Multidisciplinary Journal of Humanities, Legal Studies, Management, Commerce, Economics, Pharmacy, and Health Sciences.)
           </p>
         </div>
 

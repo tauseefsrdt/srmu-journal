@@ -21,7 +21,7 @@ export default function CtaSection() {
             </div>
 
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight leading-tight">
-              Have an Applied Science or Engineering Discovery Worth Publishing?
+              Have a Discovery in Humanities, Legal Studies, Management, Commerce, Economics, Pharmacy, or Health Sciences Worth Publishing?
             </h2>
 
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-2xl">
